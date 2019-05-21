@@ -8,7 +8,7 @@
     <header class="main-header">
       <section class="user-functions">
         <a class="main-header-logo" href="main.html">
-          <img src="img/technomart-logo.svg" width="109" height="19" alt="Логотип Техномарта">
+          <img src="img\technomart-logo.svg" width="109" height="19" alt="Логотип Техномарта">
         </a>
         <span><!-- Здесь будет форма поиска --></span>
         <ul class="purchase">
@@ -66,7 +66,7 @@
     <footer class="main-footer">
       <nav class="footer-navigation">
         <a class="main-footer-logo" href="main.html">
-          <img src="img/technomart-logo.svg" width="138" height="23" alt="Логотип Техномарта">
+          <img src="img\technomart-logo.svg" width="138" height="23" alt="Логотип Техномарта">
         </a>
         <ul>
           <li><a href="company.html">Компания</a></li>
@@ -107,5 +107,19 @@
         </div>
      </div>
     </footer>
+    <section class="letter-form">
+      <form class="letter" action="index.html" method="post">
+        <label for="your-name">Ваше имя</label>
+        <input type="text" name="name" id="name-field" value="Имя Фамилия">
+
+        <label for="email-field">Ваш e-mail</label>
+        <input type="text" name="e-mail" id="email-field" value="email@example.com">
+
+        <label for="letter-field">Текст письма</label>
+        <textarea name="letter" rows="8" cols="80" id="letter-field">В свободной форме</textarea>
+        <input type="submit" name="send" value="Отправить">
+        <input type="image" src="img\form-close.svg" alt="Закрыть">
+      </form>
+    </section>
   </body>
 </html>
