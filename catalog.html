@@ -12,7 +12,12 @@
         <a class="main-header-logo" href="main.html">
           <img src="img\technomart-logo.svg" width="109" height="19" alt="Логотип Техномарта">
         </a>
-        <span><!-- Здесь будет форма поиска --></span>
+        <span>
+          <h2 class="visually-hidden">Поиск</h2>
+          <label><form class="search" action="index.html" method="get">Поиск:</label>
+            <input type="search" name="site-search">
+          </form>
+        </span>
         <ul class="purchase">
           <li><a href="bookmarks.html">Закладки</a></li>
           <li><a class="full" href="basket.html">Корзина: 10</a></li>
@@ -22,14 +27,20 @@
       <div class="header-info">
         <h1>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
         <p>
-          <span class="phone"><a href="#">+7(812)555-05-55</a></span>
+          <span class="phone">
+            <h2 class="visually-hidden">Связаться по телефону</h2>
+            <a href="#">+7(812)555-05-55</a>
+          </span>
           г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
         </p>
 
         <section class="user-menu">
           <h2 class="visually-hidden">Меню пользователя</h2>
           <ul>
-            <span> <!--Здесь форма профиля --></span>
+            <p>
+              <h2 class="visually-hidden">Профиль пользователя</h2>
+              Равшан Джамшутович
+            </p>
             <li><a href="my-orders.html">Мои заказы</a></li>
             <li><a href="profile.html">Личный кабинет</a></li>
           </ul>
@@ -58,7 +69,31 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.catalog.html" method="post">
+          <h2>Производители</h2>
+          <fieldset>
+            <input type="checkbox" name="BOSCH" id="bosch-field" checked>
+            <label for="bosch-field">BOSCH</label><br>
+            <input type="checkbox" name="interscall" id="interscall-field">
+            <label for="interscall-field">ИНТЕРСКОЛ</label><br>
+            <input type="checkbox" name="makita" id="makita-field" checked>
+            <label for="makita-field">MAKITA</label><br>
+            <input type="checkbox" name="dewalt" id="dewalt-field">
+            <label for="dewalt-field">DEWALT</label><br>
+            <input type="checkbox" name="hitachi" id="hitachi-field">
+            <label for="hitachi-field">HITACHI</label><br>
+          </fieldset>
+        </form>
+        <form action="https://echo.catalog.html" method="post">
+          <label>
+            <input type="radio" name="rechargeable" value="a" checked> Аккумуляторные
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="networked" value="b"> Сетевые
+          </label><br>
+          <input type="submit" name="show" value="Показать">
+        </form>
       </section>
 
       <section class="catalog">
@@ -200,5 +235,11 @@
         </div>
       </div>
     </footer>
+    <div class="added-to-basket">
+      <h2 class="visually-hidden">Уведомление о добавлении товара в корзину</h2>
+      <h3>Товар добавлен в корзину</h3>
+      <button type="submit" name="checkout">Офромить заказ</button>
+      <button type="submit" name="continue">Продолжить покупки</button>
+    </div>
   </body>
 </html>
