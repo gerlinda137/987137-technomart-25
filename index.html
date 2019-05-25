@@ -10,12 +10,10 @@
         <a class="main-header-logo" href="main.html">
           <img src="img\technomart-logo.svg" width="109" height="19" alt="Логотип Техномарта">
         </a>
-        <span>
           <h2 class="visually-hidden">Поиск</h2>
-          <label><form class="search" action="index.html" method="get">Поиск:</label>
-            <input type="search" name="site-search">
+          <label class="visually-hidden"><form class="search" action="index.html" method="get"></label>
+            <input type="search" name="site-search" placeholder="Поиск:">
           </form>
-        </span>
         <ul class="purchase">
           <li><a href="bookmarks.html">Закладки</a></li>
           <li><a href="basket.html">Корзина</a></li>
@@ -24,13 +22,10 @@
       </section>
       <div class="header-info">
         <h1>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
-        <p>
-          <span class="phone">
-            <h2 class="visually-hidden">Связаться по телефону</h2>
-            <a href="#">+7(812)555-05-55</a>
-          </span>
-          г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
-        </p>
+        <div class="header-contacts">
+          <a href="#">+7(812)555-05-55</a>
+          <p>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+        </div>
         <div class="authorization">
           <ul>
             <li><a href="log-in.html">Войти</a></li>
@@ -115,20 +110,20 @@
         </div>
      </div>
     </footer>
-    <section class="letter-form">
+    <div class="letter-form">
       <h2 class="visually-hidden">Окно отправки письма</h2>
       <form class="letter" action="index.html" method="post">
-        <label for="your-name">Ваше имя</label>
-        <input type="text" name="name" id="name-field" value="Имя Фамилия">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
 
-        <label for="email-field">Ваш e-mail</label>
-        <input type="text" name="e-mail" id="email-field" value="email@example.com">
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="text" name="e-mail" id="email-field" placeholder="email@example.com">
 
-        <label for="letter-field">Текст письма</label>
-        <textarea name="letter" rows="8" cols="80" id="letter-field">В свободной форме</textarea>
+        <label for="letter-field">Текст письма:</label>
+        <textarea name="letter" rows="8" cols="80" id="letter-field" placeholder="В свободной форме"></textarea>
         <input type="submit" name="send" value="Отправить">
-        <input type="image" src="img\form-close.svg" alt="Закрыть">
+        <button> <img src="img\form-close.svg" alt="Закрыть"> </button>
       </form>
-    </section>
+    </div>
   </body>
 </html>
