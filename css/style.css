@@ -1,171 +1,215 @@
 /*
 Вопросы:
 1) не получается сделать padding-top в лого. Почему?
-2) Почему наследуется ховер ссылок в лого, если у меня расположено свойство с лого ниже + более конкретное? Я не могу понять, как с этим справиться. Пробовала уточнять .main-header-logo img:hover;
-Но тогда очень растягивает саму кнопку.
-3) Наплыв одного элемента на другой можно убрать с помощью сеток будет, да? Я пока сделала с помощью margin, но, кажется, это неверно.
+2)большие проблемы с плэйсхолдэром. Нашла решение в гугле
+ ::-webkit-input-placeholder
+::-moz-placeholder
+:-ms-input-placeholder , но у меня внезапно слетел visually-hidden.
+
 */
 
 
 
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-  color: #ffffff;
+body
+{
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+
+    color: #fff;
 }
-a {
-  text-decoration: none;
-}
-
-.main-header {
-background-color: #f4f7f9;
-
-}
-
-.user-functions {
-  background-color: #32425c;
-  font-size: 17px;
-  line-height: 18px;
-  color: #ffffff;
-
+a
+{
+    text-decoration: none;
 }
 
-
-
-.purchase {
-  list-style: none;
-}
-.user-functions a {
-  color: #ffffff;
+.main-header
+{
+    background-color: #f4f7f9;
 }
 
-.user-functions a:hover {
-  background-color: #212a3a;
-}
+.user-functions
+{
+    font-size: 17px;
+    line-height: 18px;
 
-.user-functions a:active {
-  background-color: #161d29;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.main-header-logo {
-  background-color: #ee3643;
-  border-style: hidden;
-  padding: 13px 56px 13px 55px;
-  user-select: none;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-}
-
-.main-header-logo:hover {
-  background-color: #ca2c37;
-}
-
-.main-header-logo:active {
-  background-color: #ba2732;
-}
-
-a.checkout {
-  background-color: #63a63e;
-	border-style: hidden;
-  /*padding: 20px 14px;*/
-  user-select: none;
-}
-a.checkout:hover {
-  background-color: #5fbb2d;
-}
-
-a.checkout:active {
-  background-color: #518534;
-  color: #f1f5f7;
-}
-
-.header-info h1 {
-
-  font-family: Cuprum;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 23px;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ee3643;
-}
-
-.header-contacts a {
-
-  border: solid 3px #ffffff;
-  color: #ee3643;
-  font-size: 21px;
-  font-family: Cuprum, sans-serif;
-  padding: 13px 52px 11px 74px;
-}
-
-.header-contacts p {
-
-  font-family: Cuprum, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: #32425c;
-}
-.authorization li {
-  list-style: none;
-  margin-top: 62px;
-}
-
-.authorization .log-in {
-  color: #000000;
-  font-size: 21px;
-  line-height: 21px;
-  background-color: #ffffff;
-	border-style: hidden;
-  padding: 14px 27px 15px 48px;
-  user-select: none;
-}
-.authorization .sign-up {
-  color: #000000;
-  font-size: 21px;
-  line-height: 21px;
-  background-color: #ffffff;
-	border-style: hidden;
-  padding: 14px 25px 11px 25px;
-  user-select: none;
+    color: #fff;
+    background-color: #32425c;
 }
 
 
-.main-navigation {
-  background-color: #32425c;
-  box-shadow: inset 0px -5px 0 0 #293449;
+
+.purchase
+{
+    list-style: none;
+}
+.purchase a
+{
+    color: #fff;
 }
 
-.site-navigation li {
-  list-style: none;
-  font-family: Cuprum;
-
-}
-.site-navigation a {
-  font-size: 17px;
-  line-height: 17px;
-  text-align: left;
-  color: #ffffff;
+.purchase a:hover
+{
+    background-color: #212a3a;
 }
 
-.site-navigation a:hover {
-background-color: #293449;
+.purchase a:active
+{
+    color: rgba(255, 255, 255, .6);
+    background-color: #161d29;
 }
 
-.site-navigation a:active {
-background-color: #1d2739;
-color: #f1f5f7;
-}
+.main-header-logo
+{
+    padding: 13px 56px 13px 55px;
+
+    user-select: none;
+
+    border-style: hidden;
+    background-color: #ee3643;
+    box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, .24);
 }
 
-.visually-hidden h2 {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+.main-header-logo:hover
+{
+    background-color: #ca2c37;
+}
+
+.main-header-logo:active
+{
+    background-color: #ba2732;
+}
+
+a.checkout
+{
+    /*padding: 20px 14px;*/
+    user-select: none;
+
+    border-style: hidden;
+    background-color: #63a63e;
+}
+a.checkout:hover
+{
+    background-color: #5fbb2d;
+}
+
+a.checkout:active
+{
+    color: #f1f5f7;
+    background-color: #518534;
+}
+
+.header-info h1
+{
+    font-family: Cuprum;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 23px;
+
+    text-align: left;
+    letter-spacing: normal;
+
+    color: #ee3643;
+}
+
+.header-contacts a
+{
+    font-family: Cuprum, sans-serif;
+    font-size: 21px;
+
+    padding: 13px 52px 11px 74px;
+
+    color: #ee3643;
+    border: solid 3px #fff;
+}
+
+.header-contacts p
+{
+    font-family: Cuprum, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #32425c;
+}
+.authorization li
+{
+    margin-top: 62px;
+
+    list-style: none;
+}
+
+.authorization .log-in
+{
+    font-size: 21px;
+    line-height: 21px;
+
+    padding: 14px 27px 15px 48px;
+
+    user-select: none;
+
+    color: #000;
+    border-style: hidden;
+    background-color: #fff;
+}
+.authorization .sign-up
+{
+    font-size: 21px;
+    line-height: 21px;
+
+    padding: 14px 25px 11px 25px;
+
+    user-select: none;
+
+    color: #000;
+    border-style: hidden;
+    background-color: #fff;
+}
+
+
+.main-navigation
+{
+    background-color: #32425c;
+    box-shadow: inset 0 -5px 0 0 #293449;
+}
+
+.site-navigation li
+{
+    font-family: Cuprum;
+
+    list-style: none;
+}
+.site-navigation a
+{
+    font-size: 17px;
+    line-height: 17px;
+
+    text-align: left;
+
+    color: #fff;
+}
+
+.site-navigation a:hover
+{
+    background-color: #293449;
+}
+
+.site-navigation a:active
+{
+    color: #f1f5f7;
+    background-color: #1d2739;
+}
+
+.visually-hidden h2
+{
+    position: absolute;
+
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
