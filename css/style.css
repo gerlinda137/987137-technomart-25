@@ -65,6 +65,8 @@ a
 
 .main-header-logo
 {
+    display: inline-block;
+
     padding: 13px 56px 13px 55px;
 
     user-select: none;
@@ -203,7 +205,7 @@ a.checkout:active
     background-color: #1d2739;
 }
 
-.visually-hidden h2
+.visually-hidden
 {
     position: absolute;
 
