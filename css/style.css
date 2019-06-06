@@ -230,7 +230,6 @@ a.checkout:active
 
 .container h2
 {
-    font-family: Cuprum, sans-serif;
     font-size: 30px;
 
     text-align: left;
@@ -254,10 +253,9 @@ a.checkout:active
 
 .companies
 {
-    font-family: Cuprum, sans-serif;
     font-size: 18px;
 
-    list-style-type: none;
+    list-style: none;
 
     text-align: left;
 
@@ -369,7 +367,7 @@ a.checkout:active
 
 .footer-navigation li
 {
-    list-style-type: none;
+    list-style: none;
 }
 
 .footer-site-navigation a
@@ -419,7 +417,7 @@ a.checkout:active
 
 .social-media
 {
-    list-style-type: none;
+    list-style: none;
 }
 
 .social-media a
