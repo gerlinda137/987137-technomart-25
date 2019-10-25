@@ -9,42 +9,50 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="page-container">
+    <div>
       <header class="main-header">
         <section class="user-functions container-box">
           <div class="container-box__inner">
-            <a class="main-header-logo" href="index.html">
-              <img src="img\technomart-logo.svg" width="109" height="19" alt="Логотип Техномарта">
-            </a>
-            <div class="header-search">
-              <h2 class="visually-hidden">Поиск</h2>
-              <form class="search" action="index.html" method="get">
-                <input type="search" name="site-search" placeholder="Поиск:">
-              </form>
-            </div>
-            <ul class="purchase">
-              <li><a href="bookmarks.html">Закладки: 0</a></li>
-              <li><a href="basket.html">Корзина: 0</a></li>
-              <li><a class="checkout" href="checkout.html">Оформить заказ</a></li>
+            <ul class="user-functions__list">
+              <li>
+                <a class="main-header-logo" href="index.html">
+                  <img src="img\technomart-logo.svg" width="109" height="19" alt="Логотип Техномарта">
+                </a>
+                <div class="header-search">
+                  <h2 class="visually-hidden">Поиск</h2>
+                  <form class="search" action="index.html" method="get">
+                    <input type="search" name="site-search" placeholder="Поиск:">
+                  </form>
+                </div>
+              </li>
+              <li>
+                <ul class="purchase">
+                  <li><a href="bookmarks.html">Закладки: 0</a></li>
+                  <li><a href="basket.html">Корзина: 0</a></li>
+                  <li><a class="checkout" href="checkout.html">Оформить заказ</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </section>
 
-        <div class="header-info">
-          <h1>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
-          <div class="header-contacts">
-            <a href="#">+7 (812) 555-05-55</a>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          </div>
-          <div class="authorization">
-            <ul class="authorization-list">
-              <li><a class="log-in" href="log-in.html">Войти</a></li>
-              <li><a class="sign-up"href="sign-up.html">Регистрация</a></li>
-            </ul>
+        <div class="header-info container-box">
+          <div class="container-box__inner">
+            <h1>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
+            <div class="header-contacts">
+              <a href="#">+7 (812) 555-05-55</a>
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
+            <div class="authorization">
+              <ul class="authorization-list">
+                <li><a class="log-in" href="log-in.html">Войти</a></li>
+                <li><a class="sign-up"href="sign-up.html">Регистрация</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <nav class="main-navigation">
-          <ul class="site-navigation">
+        <nav class="main-navigation container-box">
+          <ul class="site-navigation container-box__inner">
             <li><a href="main.html">Главная</a></li>
             <li><a href="company.html">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -55,7 +63,7 @@
           </ul>
         </nav>
       </header>
-      <!-- <main class="container">
+       <main class="main-container container-box container-box__inner">
         <section class="info">
           <h2>КОМПАНИЯ «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах. </p>
@@ -141,7 +149,7 @@
           <input type="submit" name="send" value="Отправить">
           <button> <img src="img\form-close.svg" width="21px" height="21px" alt="Закрыть"> </button>
         </form>
-      </div>-->
+      </div>
     </div>
   </body>
 </html>
