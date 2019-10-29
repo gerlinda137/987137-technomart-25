@@ -54,7 +54,6 @@ html{
 {
   width: 940px;
   margin: 0px auto;
-  display: flex;
 }
 
 .user-functions .container-box__inner
@@ -63,6 +62,10 @@ html{
   align-items: center;
   padding-left: 237px;
   position: relative;
+}
+
+.header-info .container-box__inner{
+  display: flex;
 }
 
 .user-functions__list
@@ -342,7 +345,7 @@ a.checkout:active
 
 .main-navigation
 {
-
+  padding-bottom: 50px;
 
 }
 
@@ -394,7 +397,7 @@ a.checkout:active
 {
     background-color: #fff;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .breadcrumbs
@@ -434,6 +437,7 @@ a.checkout:active
 
     text-align: left;
     text-transform: uppercase;
+    font-weight: 400;
 
     color: #000;
 }
@@ -450,6 +454,13 @@ a.checkout:active
     text-align: left;
 
     color: #000;
+}
+
+.contacts-info
+{
+  display: flex;
+  justify-content: space-between;
+
 }
 
 
@@ -469,6 +480,17 @@ a.checkout:active
   width: 300px;
 }
 
+
+.categories {
+  display: flex;
+
+}
+
+.categories-list {
+  display: flex;
+}
+
+/*Каталог*/
 .filters
 {
     font-family: PTSans, sans-serif;
@@ -566,14 +588,14 @@ a.checkout:active
 {
   display: flex;
   flex-direction: column;
-    font-size: 18px;
+  font-size: 18px;
 
-    list-style: none;
+  list-style: none;
 
-    text-align: left;
-    padding-inline-start: 0;
+  text-align: left;
+  padding-inline-start: 0;
 
-    color: #000;
+  color: #000;
 }
 
 .companies li
@@ -666,13 +688,21 @@ a.checkout:active
 .main-footer
 {
     background-color: #32425c;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav_and_logo
+{
+  display: flex;
+  align-items: flex-start
 }
 
 .main-footer-logo
 {
     display: inline-block;
 
-    padding: 13px 56px 13px 55px;
+    padding: 20px 41px 22px 41px;
 
     user-select: none;
 
@@ -690,9 +720,17 @@ a.checkout:active
     background-color: #ba2732;
 }
 
+.footer-site-navigation
+{
+  display: flex;
+  padding-left: 133px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
 
 .footer-navigation li
 {
+  display: flex;
     list-style: none;
 }
 
@@ -705,11 +743,30 @@ a.checkout:active
     text-align: left;
 }
 
+.footer-social
+{
+  display: flex;
+}
+
+.general-list {
+  display: flex;
+  justify-content: space-between;
+  width: 588px;
+}
+
 .general-list a
 {
+
     color: #f1f5f7;
 }
 
+.additional-list
+{
+  display: flex;
+  justify-content: space-between;
+  width: 588px;
+  padding-left: 63px;
+}
 .additional-list a
 {
     color: #ffd180;
@@ -727,28 +784,42 @@ a.checkout:active
 .footer-contacts
 {
     color: #f3f7f9;
+    display: flex;
 }
 
 .additional-info
 {
-    font-family: Cuprum, sans-serif;
-    font-size: 16px;
-    line-height: 18px;
+  display: flex;
+  font-family: Cuprum, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
 
-    text-align: left;
+  text-align: left;
 
-    color: #fff;
-    background-color: #293449;
+  color: #fff;
+  background-color: #293449;
 }
 
 .social-media
 {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 .social-media a
 {
     color: #fff;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 42px;
+    height: 42px;
+    margin: 3px;
+    background-color: #212a3a;
+    border-radius: 50px;
 }
 
 .social-media a:hover,
