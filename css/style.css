@@ -345,7 +345,7 @@ a.checkout:active
 
 .main-navigation
 {
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 
 }
 
@@ -365,13 +365,24 @@ a.checkout:active
   font-family: Cuprum;
 
   list-style: none;
-  padding: 20px 22px;
+  padding: 21px 22px;
   width: 100%;
 
   display: flex;
   justify-content: space-evenly;
 
 }
+
+.site-navigation li:first-child
+{
+  padding-left: 40px;
+}
+
+.site-navigation li:last-child
+{
+  padding-right: 42px;
+}
+
 .site-navigation a
 {
     font-size: 17px;
@@ -480,15 +491,97 @@ a.checkout:active
   width: 300px;
 }
 
+/*Слайды категорий*/
 
 .categories {
   display: flex;
+  flex-wrap: wrap;
 
 }
 
-.categories-list {
+.categories-list__first-row {
   display: flex;
+  justify-content: space-between;
+  padding-inline-start: 0;
+  width: 100%;
 }
+
+.categories-list__first-row li {
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  width: 300px;
+  height: 123px;
+  margin-top: 59px;
+  color: #FFF;
+}
+
+.categories-list__first-row li:first-child
+{
+  background-color: #ffbf47;
+
+}
+
+.categories-list__first-row li:nth-child(2)
+{
+  background-color: #3bbce3;
+
+}
+
+.categories-list__first-row li:last-child
+{
+  background-color: #dc91d8;
+
+}
+.categories-list__second-row
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories-slider
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 620px;
+  height: 266px;
+  background-image: url(../img/slide-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
+}
+
+.categories-list__right-column
+{
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+.categories-list__right-column li
+{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 123px;
+  color: #FFF;
+}
+
+.categories-list__right-column li:first-child
+{
+  background-color: #8ed78f;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.categories-list__right-column li:last-child
+{
+  background-color: #ffc047;
+}
+
 
 /*Каталог*/
 .filters
