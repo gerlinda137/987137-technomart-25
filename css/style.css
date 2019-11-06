@@ -353,12 +353,11 @@ a.checkout:active
 .site-navigation
 {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 9px;
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 0 #293449;
-  justify-content: space-between;
-  padding-inline-start: 0;
-
+  padding: 0 22px;
 }
 
 .site-navigation li
@@ -366,22 +365,9 @@ a.checkout:active
   font-family: Cuprum;
 
   list-style: none;
-  padding: 21px 22px;
-  width: 100%;
+  padding: 21px 30.5px;
 
   display: flex;
-  justify-content: space-evenly;
-
-}
-
-.site-navigation li:first-child
-{
-  padding-left: 40px;
-}
-
-.site-navigation li:last-child
-{
-  padding-right: 42px;
 }
 
 .site-navigation a
@@ -510,20 +496,17 @@ a.checkout:active
 .categories-list__first-row li {
   display: flex;
   flex-direction: column;
-  color: #FFF;
   width: 300px;
-  height: 123px;
-  margin-top: 59px;
   color: #FFF;
-  padding-top: 26px;
-  padding-left: 23px;
-  margin-block-start: 0;
+  padding: 22px 23px 20px 23px;
+  margin-top: 0;
 }
 
 .cat-list__title {
- font-size: 24px;
- line-height: 30px;
- text-align: left;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  margin: 0;
 }
 
 .cat-button {
@@ -532,11 +515,11 @@ a.checkout:active
   color: #FFF;
   text-align: center;
   background-color: rgba(0,0,0,0.1);
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border-radius: 3px;
   width: 135px;
-
+  margin-top: 10px;
 }
 
 .categories-list__first-row li:first-child
@@ -688,6 +671,16 @@ a.checkout:active
   background-color: #ba2732;
 }
 
+.popular-goods__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+
 /*Каталог*/
 .filters
 {
@@ -744,18 +737,26 @@ a.checkout:active
 }
 */
 
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e5e5;
+
+}
+
 .item-name a
 {
-    font-family: PTSans, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 20px;
+  display: flex;
+  font-family: PTSans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    text-align: center;
+  text-align: center;
 
-    color: #000;
+  color: #000;
 }
 
 .catalog-item span
