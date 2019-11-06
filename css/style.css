@@ -346,6 +346,7 @@ a.checkout:active
 .main-navigation
 {
   padding-bottom: 60px;
+  margin-bottom: 59px;
 
 }
 
@@ -514,6 +515,28 @@ a.checkout:active
   height: 123px;
   margin-top: 59px;
   color: #FFF;
+  padding-top: 26px;
+  padding-left: 23px;
+  margin-block-start: 0;
+}
+
+.cat-list__title {
+ font-size: 24px;
+ line-height: 30px;
+ text-align: left;
+}
+
+.cat-button {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #FFF;
+  text-align: center;
+  background-color: rgba(0,0,0,0.1);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 3px;
+  width: 135px;
+
 }
 
 .categories-list__first-row li:first-child
@@ -552,6 +575,40 @@ a.checkout:active
   color: #FFF;
 }
 
+.categories-slider h3 {
+  text-transform: uppercase;
+  font-size: 36px;
+  text-align: left;
+}
+
+.categories-slider p{
+  font-family: 'Cuprum', Arial, sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.slider-button {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #ee3643;
+  border-radius: 3px;
+  padding: 14px 45px 14px 49px;
+  width: 195px;
+}
+
+.slider-button:hover {
+  background-color: #ca2c37;
+}
+
+.slider-button:active {
+  background-color: #ba2732;
+}
+
 .categories-list__right-column
 {
   display: flex;
@@ -568,6 +625,7 @@ a.checkout:active
   width: 300px;
   height: 123px;
   color: #FFF;
+
 }
 
 .categories-list__right-column li:first-child
@@ -582,6 +640,53 @@ a.checkout:active
   background-color: #ffc047;
 }
 
+
+/*Популярные товары*/
+.popular-goods{
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-goods__heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f9f5f0;
+  margin-top: 38px;
+}
+
+.popular-goods__heading h2 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+  color: #32425c;
+  text-transform: uppercase;
+
+  padding-left: 28px;
+}
+
+.popular-goods__heading a {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 18px;
+
+  background-color: #ee3643;
+  border-radius: 3px;
+  padding: 10px 55px 5px 55px;
+  margin-top: 23px;
+  margin-right: 24px;
+  height: 38px;
+  margin-bottom: 26px;
+}
+
+.popular-goods__heading a:hover {
+  background-color: #ca2c37;
+}
+
+.popular-goods__heading a:active {
+  background-color: #ba2732;
+}
 
 /*Каталог*/
 .filters
