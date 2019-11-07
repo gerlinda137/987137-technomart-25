@@ -498,7 +498,7 @@ a.checkout:active
   flex-direction: column;
   width: 300px;
   color: #FFF;
-  padding: 22px 23px 20px 23px;
+  padding: 21px 23px 20px 23px;
   margin-top: 0;
 }
 
@@ -507,6 +507,8 @@ a.checkout:active
   line-height: 30px;
   text-align: left;
   margin: 0;
+  padding-right: 79px;
+
 }
 
 .cat-button {
@@ -519,13 +521,24 @@ a.checkout:active
   padding-bottom: 12px;
   border-radius: 3px;
   width: 135px;
-  margin-top: 10px;
+  margin-top: 11px;
 }
 
 .categories-list__first-row li:first-child
 {
   background-color: #ffbf47;
+}
 
+.categories-list__first-row .new-item::after {
+  position: absolute;
+  left: 240px;
+  top: 0;
+  background-image: url(../img/new-flag.png);
+  background-repeat: no-repeat;
+  content: "";
+  background-size: cover;
+  width: 60px;
+  height: 59px;
 }
 
 .categories-list__first-row li:nth-child(2)
@@ -539,6 +552,12 @@ a.checkout:active
   background-color: #dc91d8;
 
 }
+
+.categories-list__first-row .new-item {
+  left: 0;
+  top: 0;
+}
+
 .categories-list__second-row
 {
   display: flex;
@@ -646,6 +665,7 @@ a.checkout:active
   text-transform: uppercase;
 
   padding-left: 28px;
+  margin-top: 28px;
 }
 
 .popular-goods__heading a {
@@ -656,7 +676,7 @@ a.checkout:active
 
   background-color: #ee3643;
   border-radius: 3px;
-  padding: 10px 55px 5px 55px;
+  padding: 12px 55px 5px 55px;
   margin-top: 23px;
   margin-right: 24px;
   height: 38px;
@@ -680,6 +700,28 @@ a.checkout:active
   margin-bottom: 21px;
 }
 
+.no-discount__button {
+  margin-top: 44px;
+}
+
+.popular-goods__items .cross-out {
+  color: #a9a9a9;
+}
+
+.new-item {
+  position: relative;
+}
+
+.new-item::after {
+  position: absolute;
+  left: 159px;
+  background-image: url(../img/new-flag.png);
+  background-repeat: no-repeat;
+  content: "";
+  background-size: cover;
+  width: 60px;
+  height: 59px;
+}
 
 /*Каталог*/
 .filters
@@ -744,7 +786,11 @@ a.checkout:active
 
 }
 
-.item-name a
+.item-name {
+  margin: 0 auto;
+}
+
+ .item-name a
 {
   display: flex;
   font-family: PTSans, sans-serif;
@@ -761,26 +807,38 @@ a.checkout:active
 
 .catalog-item span
 {
-    font-family: PTSans, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 18px;
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 8px;
 
-    display: block;
+  font-family: PTSans, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
 
-    text-decoration: line-through;
-
-    color: #999;
+  text-decoration: line-through;
+  color: #999;
 }
 
 .catalog-item .button
 {
-    font-family: PTSans, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
 
-    color: #fff;
-    background-image: url("../img/item-button.svg");
+  font-family: PTSans, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+
+  color: #fff;
+  background-image: url("../img/item-button.svg");
+  /*background-color: #ee3643;*/
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 38px;
 }
 
 .companies
