@@ -483,6 +483,7 @@ a.checkout:active
 .categories {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 37px;
 
 }
 
@@ -567,8 +568,9 @@ a.checkout:active
 .categories-slider
 {
   display: flex;
+  position: relative;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 21px;
   width: 620px;
   height: 266px;
   background-image: url(../img/slide-image.jpg);
@@ -581,9 +583,12 @@ a.checkout:active
   text-transform: uppercase;
   font-size: 36px;
   text-align: left;
+  margin-top: 20px;
+  margin-left: 24px;
+}
 }
 
-.categories-slider p{
+.categories-slider p {
   font-family: 'Cuprum', Arial, sans-serif;
   color: #fff;
   font-size: 18px;
@@ -599,8 +604,10 @@ a.checkout:active
 
   background-color: #ee3643;
   border-radius: 3px;
-  padding: 14px 45px 14px 49px;
-  width: 195px;
+  padding: 12px 46px 10px 50px;
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
 }
 
 .slider-button:hover {
@@ -625,8 +632,9 @@ a.checkout:active
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 123px;
   color: #FFF;
+  padding: 22px 23px 20px 23px;
+  margin-top: 0;
 
 }
 
@@ -654,7 +662,6 @@ a.checkout:active
   justify-content: space-between;
   width: 100%;
   background-color: #f9f5f0;
-  margin-top: 38px;
 }
 
 .popular-goods__heading h2 {
@@ -721,6 +728,12 @@ a.checkout:active
   background-size: cover;
   width: 60px;
   height: 59px;
+}
+
+/*Поупулярные производители*/
+.popular-poducers .popular-goods__heading {
+  margin-top: 0;
+  padding-bottom: 2px;
 }
 
 /*Каталог*/
@@ -834,11 +847,11 @@ a.checkout:active
 
   color: #fff;
   background-image: url("../img/item-button.svg");
-  /*background-color: #ee3643;*/
   background-position: center;
   background-repeat: no-repeat;
 
   height: 38px;
+  margin-bottom: 21px;
 }
 
 .companies
