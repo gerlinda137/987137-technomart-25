@@ -40,7 +40,7 @@
           <div class="container-box__inner">
             <h1>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
             <div class="header-contacts">
-              <a href="#">+7 (812) 555-05-55</a>
+              <a href="tel:+78125550555">+7 (812) 555-05-55</a>
               <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
             <div class="authorization">
@@ -104,7 +104,7 @@
                <h3 class="item-name"><a href="catalog-item">Перфоратор BOSCH<br> BFG 9000</a></h3>
                <div class="catalog-item-price">
                  <span class="cross-out">32500 Р.</span>
-                 <a class="button" href="#">25500 Р.</a>
+                 <p class="button" href="#">25500 Р.</p>
                </div>
              </li>
              <li class="catalog-item">
@@ -113,7 +113,7 @@
                <h3 class="item-name"><a href="catalog-item">Перфоратор BOSCH<br> BFG 3000</a></h3>
                <div class="catalog-item-price">
                  <span class="cross-out">22500 Р.</span>
-                 <a class="button" href="#">15500 Р.</a>
+                 <p class="button" href="#">15500 Р.</p>
                </div>
              </li>
              <li class="catalog-item">
@@ -122,7 +122,7 @@
                <h3 class="item-name"><a href="catalog-item">Перфоратор BOSCH<br> BFG 6000</a></h3>
                <div class="catalog-item-price">
                  <span class="cross-out">30500 Р.</span>
-                 <a class="button" href="#">25500 Р.</a>
+                 <p class="button" href="#">25500 Р.</p>
                </div>
              </li>
              <li class="catalog-item new-item">
@@ -130,7 +130,7 @@
                </a>
                <h3 class="item-name"><a href="catalog-item">Перфоратор BOSCH<br> BFG 2000</a></h3>
                <div class="catalog-item-price">
-                 <a class="button no-discount__button" href="#">12500 Р.</a>
+                 <p class="button no-discount__button" href="#">12500 Р.</p>
                </div>
              </li>
            </ul>
@@ -167,33 +167,41 @@
       </main>
 
       <footer class="main-footer container-box">
-        <div class="container-box__inner">
-          <nav class="footer-navigation">
-            <div class="footer-nav_and_logo container-box">
+        <div class="footer-wrapper container-box__inner">
+          <div class="footer-logo_and_contacts">
+            <div class="footer-logo">
               <a class="main-footer-logo" href="main.html">
                 <img src="img\technomart-logo.svg" width="138" height="23" alt="Логотип Техномарта">
               </a>
-              <section class="footer-site-navigation">
-                <ul class="general-list">
-                  <li><a href="company.html">Компания</a></li>
-                  <li><a href="news.html">Новости</a></li>
-                  <li><a href="catalog.html">Каталог</a></li>
-                  <li><a href="delivery.html">Доставка</a></li>
-                  <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-                <ul class="additional-list">
-                  <li><a href="#">Материалы</a></li>
-                  <li><a href="#">Техника</a></li>
-                  <li><a href="#">Инструмент</a></li>
-                  <li><a href="spec-services.html">Спецпредложения</a></li>
-                </ul>
-              </section>
             </div>
-          </nav>
-            <p class="footer-contacts">
-              г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 <br>
-              +7(812)555-05-55
-            </p>
+            <div class="footer-contacts-wrapper">
+              <p class="footer-contacts">
+                г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 <br>
+                <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+              </p>
+            </div>
+          </div>
+          <div class="footer-navigation__wrapper">
+            <nav class="footer-navigation">
+              <div class="footer-nav_and_logo container-box">
+                <section class="footer-site-navigation">
+                  <ul class="general-list">
+                    <li><a href="company.html">Компания</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                  </ul>
+                  <ul class="additional-list">
+                    <li><a href="#">Материалы</a></li>
+                    <li><a href="#">Техника</a></li>
+                    <li><a href="#">Инструмент</a></li>
+                    <li><a href="spec-services.html">Спецпредложения</a></li>
+                  </ul>
+                </section>
+              </div>
+            </nav>
+          </div>
         </div>
           <div class="additional-info container-box">
             <div class="container-box__inner">
@@ -240,16 +248,22 @@
       <div class="letter-form">
         <h2 class="visually-hidden">Окно отправки письма</h2>
         <form class="letter" action="index.html" method="post">
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-
-          <label for="email-field">Ваш e-mail:</label>
-          <input type="text" name="e-mail" id="email-field" placeholder="email@example.com">
-
-          <label for="letter-field">Текст письма:</label>
-          <textarea name="letter" rows="8" cols="80" id="letter-field" placeholder="В свободной форме"></textarea>
-          <input type="submit" name="send" value="Отправить">
-          <button> <img src="img\form-close.svg" width="21px" height="21px" alt="Закрыть"> </button>
+          <div class="form-container-box">
+            <div class="name-and-mail">
+              <div class="small-form-wrapper">
+                <label for="name-field">Ваше имя:</label>
+                <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+              </div>
+              <div class="small-form-wrapper">
+                <label for="email-field">Ваш e-mail:</label>
+                <input type="text" name="e-mail" id="email-field" placeholder="email@example.com">
+              </div>
+            </div>
+            <label class="letter-field-label" for="letter-field">Текст письма:</label>
+            <textarea class="letter-field-textarea" name="letter" rows="8" cols="80" id="letter-field" placeholder="В свободной форме"></textarea>
+            <input type="submit" name="send" value="Отправить">
+            <button> <img src="img\form-close.svg" width="21px" height="21px" alt="Закрыть"> </button>
+          </div>
         </form>
       </div>
     </div>
