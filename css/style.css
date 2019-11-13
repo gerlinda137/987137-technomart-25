@@ -771,6 +771,16 @@ a.checkout:active
   margin: auto;
 }
 
+/*Сервисы*/
+
+.services {
+  background-color: #f4f7f9;
+}
+
+.services__general-info h2 {
+  margin-top: 37px;
+}
+
 /*Каталог*/
 .filters
 {
