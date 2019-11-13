@@ -738,6 +738,26 @@ a.checkout:active
   padding-bottom: 2px;
 }
 
+.producers-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.producers-list li {
+  width: 220px;
+  height: 145px;
+  display: flex;
+  border: solid 1px #eaeaea;
+  margin: 2px 0 18px;
+}
+
+.prodecers-link {
+  margin: auto;
+}
+
 /*Каталог*/
 .filters
 {
