@@ -738,6 +738,11 @@ a.checkout:active
   padding-bottom: 2px;
 }
 
+.producers-list__container {
+  display: flex;
+  margin-bottom: 75px;
+}
+
 .producers-list {
   display: flex;
   justify-content: space-between;
@@ -752,6 +757,14 @@ a.checkout:active
   display: flex;
   border: solid 1px #eaeaea;
   margin: 2px 0 18px;
+}
+
+.producers-list li:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.producers-list li:active {
+  opacity: 0.3;
 }
 
 .prodecers-link {
