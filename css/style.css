@@ -777,8 +777,89 @@ a.checkout:active
   background-color: #f4f7f9;
 }
 
+.services__general-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
 .services__general-info h2 {
   margin-top: 37px;
+}
+
+.services__slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__toggle {
+  display: flex;
+}
+
+.services__toggle-list {
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-top: 17px;
+}
+
+.services__toggle::after {
+  content: "";
+  position: relative;
+  background-image: url(../img/shadow.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 279px;
+  left: 230px;
+
+}
+
+.services__toggle_button {
+  width: 240px;
+  height: 62px;
+  background-color: #32425c;
+  cursor: pointer;
+  border-bottom-color: #293449;
+  border-top-color: #405069;
+  border-width: 1px;
+  border-style: solid;
+
+  color: #fff;
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 23px;
+
+}
+
+
+
+.services__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__card h3 {
+  font-family: Cuprum;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: left;
+  color: #32425c;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.services__card p {
+  display: flex;
+  flex-wrap: wrap;
+  width: 275px;
 }
 
 /*Каталог*/
