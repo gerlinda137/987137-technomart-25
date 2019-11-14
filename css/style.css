@@ -804,6 +804,7 @@ a.checkout:active
 .services__slider {
   display: flex;
   justify-content: space-between;
+  position: relative;
   margin-top: 17px
 }
 
@@ -830,6 +831,7 @@ a.checkout:active
   width: 10px;
   height: 279px;
   left: 230px;
+  top: -27px;
 
 }
 
@@ -844,6 +846,7 @@ a.checkout:active
   border-style: solid;
 
   color: #fff;
+  font-weight: 700;
   font-family: Cuprum;
   font-size: 21px;
   line-height: 30px;
@@ -852,13 +855,31 @@ a.checkout:active
 
 }
 
+.services__toggle_button:hover {
+  background-color: #293449;
+}
 
+.active__services-toggle {
+  background-color: #fff;
+  color: #32425c;
+  border-style: none;
+}
+
+.active__services-toggle:hover {
+  background-color: #fff;
+}
 
 .services__card {
   display: flex;
   flex-direction: column;
+  background-image: url(../img/delivery@3x.png);
+  background-repeat: no-repeat;
+  background-size: 468px 261px;
+  background-position-y: 29px;
+  padding-right: 320px;
+  margin-top: 13px;
+  background-position-x: right;
 }
-
 .services__card h3 {
   font-family: Cuprum;
   font-weight: 400;
@@ -866,14 +887,14 @@ a.checkout:active
   text-align: left;
   color: #32425c;
   text-transform: uppercase;
+  margin: 0 0 23px;
 
-  margin: 0;
 }
 
 .services__card p {
   display: flex;
   flex-wrap: wrap;
-  width: 275px;
+  width: 300px;
 }
 
 /*Каталог*/
