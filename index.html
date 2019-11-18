@@ -63,20 +63,20 @@
           </ul>
         </nav>
       </header>
-       <main class="main-container  container-box__inner">
-         <section class="categories">
+       <main class="main-container">
+         <section class="categories container-box__inner">
            <ul class="categories-list__first-row container-box__inner">
              <li class="new-item"> <h3 class="cat-list__title">Материалы</h3>
                <a class="cat-button" href="#">На любой вкус</a>
-               <img class="categories__icon" src="img/icon-1@2x.png" alt="Материалы" width="44px" height="65px">
+               <img class="categories__icon bucket-icon" src="img/icon-1@2x.png" alt="Материалы" width="44px" height="65px">
              </li>
              <li> <h3 class="cat-list__title">Инструмент</h3>
                <a class="cat-button" href="#">На все случаи</a>
-               <img class="categories__icon" src="img/icon-2@2x.png" alt="Инструмент" width="75px" height="61px">
+               <img class="categories__icon drill-icon" src="img/icon-2@2x.png" alt="Инструмент" width="75px" height="61px">
              </li>
              <li> <h3 class="cat-list__title">Техника</h3>
                <a class="cat-button" href="#">Для стройки</a>
-               <img class="categories__icon" src="img/icon-3@2x.png" alt="Техника" width="78px" height="62px">
+               <img class="categories__icon tracktor-icon" src="img/icon-3@2x.png" alt="Техника" width="78px" height="62px">
              </li>
             </ul>
             <div class="categories-list__second-row">
@@ -88,11 +88,11 @@
               <ul class="categories-list__right-column">
                 <li> <h3 class="cat-list__title">Скидки 50%</h3>
                   <a class="cat-button" href="#">На 350 товаров</a>
-                  <img class="categories__icon" src="img/icon-4@2x.png" alt="Скидки" width="59px" height="72px">
+                  <img class="categories__icon cart-icon" src="img/icon-4@2x.png" alt="Скидки" width="59px" height="72px">
                 </li>
                 <li> <h3 class="cat-list__title">Доставка</h3>
                   <a class="cat-button" href="#">Бесплатно</a>
-                  <img class="categories__icon" src="img/icon-5@2x.png" alt="Доставка" width="78px" height="63px">
+                  <img class="categories__icon van-cart" src="img/icon-5@2x.png" alt="Доставка" width="78px" height="63px">
                 </li>
               </ul>
             </div>
@@ -111,6 +111,12 @@
                  <span class="cross-out">32500 Р.</span>
                  <p class="button" href="#">25500 Р.</p>
                </div>
+               <div class="catalog-item__hover-button">
+                 <div class="hover-button__wrapper">
+                   <button type="submit" class="to-buy">Купить</button>
+                   <button type="submit" class="to-bookmarks">В закладки</button>
+                 </div>
+               </div>
              </li>
              <li class="catalog-item">
                <a href="catalog-item.html">  <img src="img/BOSCH BFG 3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -119,6 +125,12 @@
                <div class="catalog-item-price">
                  <span class="cross-out">22500 Р.</span>
                  <p class="button" href="#">15500 Р.</p>
+               </div>
+               <div class="catalog-item__hover-button">
+                 <div class="hover-button__wrapper">
+                   <button type="submit" class="to-buy">Купить</button>
+                   <button type="submit" class="to-bookmarks">В закладки</button>
+                 </div>
                </div>
              </li>
              <li class="catalog-item">
@@ -129,6 +141,12 @@
                  <span class="cross-out">30500 Р.</span>
                  <p class="button" href="#">25500 Р.</p>
                </div>
+               <div class="catalog-item__hover-button">
+                 <div class="hover-button__wrapper">
+                   <button type="submit" class="to-buy">Купить</button>
+                   <button type="submit" class="to-bookmarks">В закладки</button>
+                 </div>
+               </div>
              </li>
              <li class="catalog-item new-item">
                <a href="catalog-item.html">  <img src="img/BOSCH BFG 2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
@@ -137,13 +155,19 @@
                <div class="catalog-item-price">
                  <p class="button no-discount__button" href="#">12500 Р.</p>
                </div>
+               <div class="catalog-item__hover-button">
+                 <div class="hover-button__wrapper">
+                   <button type="submit" class="to-buy">Купить</button>
+                   <button type="submit" class="to-bookmarks">В закладки</button>
+                 </div>
+               </div>
              </li>
            </ul>
          </section>
           <section class="popular-poducers container-box__inner">
             <div class="popular-goods__heading">
               <h2>Популярные производители:</h2>
-              <a href="#">Все производители</a>
+              <a class="popular-producers__button" href="#">Все производители</a>
             </div>
             <div class="producers-list__container">
               <ul class="producers-list">
@@ -185,7 +209,7 @@
 
           </section>
 
-        <div class="contacts-info">
+        <div class="contacts-info container-box__inner">
           <section class="info">
             <h2>КОМПАНИЯ «Техномарт»</h2>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах. </p>
@@ -218,8 +242,7 @@
               </a>
             </div>
             <div class="footer-contacts-wrapper">
-              <p class="footer-contacts">
-                г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 <br>
+              <p class="footer-contacts">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 <br>
                 <a href="tel:+78125550555">+7 (812) 555-05-55</a>
               </p>
             </div>
