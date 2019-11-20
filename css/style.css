@@ -60,7 +60,7 @@ html{
 {
   display: flex;
   align-items: center;
-  padding-left: 237px;
+  padding-left: 220px;
   position: relative;
 }
 
@@ -76,12 +76,13 @@ html{
   width: 100%;
   margin-bottom: 0;
   margin-top: 0;
-  padding-left: 30px;
+  padding-left: 0;
 }
 
 .purchase
 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
   padding-left: 0;
@@ -133,15 +134,20 @@ html{
 }
 
 
+.search {
+  position: relative;
+}
+
 .search input[type='search']
 {
   border: none;
   background-color: #293449;
   width: 270px;
   height: 42px;
+  padding-left: 49px;
 }
 
-.search input::placeholder
+.search input::-webkit-input-placeholder
 {
   font-family: Cuprum, sans-serif;
   font-size: 17px;
@@ -149,6 +155,38 @@ html{
   text-align: left;
 
   color: #fff;
+
+}
+
+.search input::-moz-placeholder
+{
+  font-family: Cuprum, sans-serif;
+  font-size: 17px;
+
+  text-align: left;
+
+  color: #fff;
+
+}
+.search input:-moz-placeholder
+{
+  font-family: Cuprum, sans-serif;
+  font-size: 17px;
+
+  text-align: left;
+
+  color: #fff;
+
+}
+.search input:-ms-input-placeholder
+{
+  font-family: Cuprum, sans-serif;
+  font-size: 17px;
+
+  text-align: left;
+
+  color: #fff;
+
 }
 
 .search input:hover
@@ -163,6 +201,35 @@ html{
 
     color: black;
     background-color: #fff;
+}
+
+.search input:focus + .search-button svg {
+  fill: #ee3643;
+  opacity: 1;
+  z-index: 10;
+}
+
+.search-button {
+ position: absolute;
+ top: 11px;
+ left: 11px;
+ border: none;
+ width: 17px;
+ height: 17px;
+ background-image:none;
+ background-color:transparent;
+ box-shadow: none;
+ cursor: pointer;
+
+}
+
+.search-button svg {
+  fill: #fff;
+  opacity: 0.3;
+}
+
+.search-button svg:hover {
+  opacity: 1;
 }
 
 a.full
