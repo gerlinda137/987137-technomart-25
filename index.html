@@ -216,12 +216,19 @@
                     <li><button type="button" class="services__toggle_button">Кредит</button></li>
                   </ul>
                 </div>
-                <div class="services__card">
+                <div class="services__card visually-hidden">
                   <h3>Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо<br>
                     к вашему подъезду совершенно бесплатно!<br>
                     Ведь мы неплохо заработаем,<br>
                     поднимая его на ваш этаж!</p>
+                </div>
+                <div class="services__card garanty-card">
+                  <h3>Гарантия</h3>
+                  <p>Если купленный у нас товар поломается или заискрит,<br>
+                    а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                    Дом уж восстановите как-нибудь сами.
+                  </p>
                 </div>
               </div>
             </div>
@@ -350,7 +357,9 @@
             <label class="letter-field-label" for="letter-field">Текст письма:</label>
             <textarea class="letter-field-textarea" name="letter" rows="8" cols="80" id="letter-field" placeholder="В свободной форме"></textarea>
             <input type="submit" name="send" value="Отправить">
-            <button> <img src="img\form-close.svg" width="21px" height="21px" alt="Закрыть"> </button>
+            <div class="submit-button__wrapper">
+              <button type="button"> <img src="img\form-close.svg" width="21px" height="21px" alt="Закрыть"> </button>
+            </div>
           </div>
         </form>
       </div>
