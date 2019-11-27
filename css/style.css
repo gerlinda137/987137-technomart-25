@@ -945,6 +945,7 @@ a.popular-producers__button {
 
 .services {
   background-color: #f4f7f9;
+  padding-bottom: 58px;
 }
 
 .services__general-info {
@@ -962,28 +963,26 @@ a.popular-producers__button {
 .services__slider {
   display: flex;
   justify-content: space-between;
-  position: relative;
   margin-top: 17px;
   padding-bottom: 23px;
 }
 
 .services__toggle {
   display: flex;
+  position: relative;
 }
 
 .services__toggle-list {
-  position: absolute;
   list-style: none;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-left: 0;
-  ;
 }
 
 .services__toggle::after {
   content: "";
-  position: relative;
+  position: absolute;
   background-image: url(../img/shadow.png);
   background-position: right top;
   background-repeat: no-repeat;
@@ -1378,7 +1377,7 @@ a.popular-producers__button {
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 
 }
 
@@ -1386,6 +1385,11 @@ a.popular-producers__button {
 {
   display: flex;
   flex-direction: column;
+  width: 35%;
+}
+
+.footer-navigation__wrapper{
+	width: 65%;
 }
 
 .footer-contacts-wrapper {
@@ -1424,7 +1428,7 @@ a.popular-producers__button {
 .footer-site-navigation
 {
   display: flex;
-  padding-left: 133px;
+  padding-left: 24px;
   flex-wrap: wrap;
   padding-top: 20px;
 }
@@ -1448,7 +1452,8 @@ a.popular-producers__button {
 {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 55px;
+  padding-left: 43px;
+  padding-top: 2px;
 }
 
 .general-list {
@@ -1481,14 +1486,18 @@ a.popular-producers__button {
 }
 .footer-site-navigation a:active
 {
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .footer-contacts
 {
-    color: #f3f7f9;
-    display: flex;
-    flex-direction: column;
+  color: #f3f7f9;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 9px;
+  padding-left: 5px;
+  line-height: 24px;
 }
 
 .footer-contacts a {
@@ -1534,7 +1543,7 @@ a.popular-producers__button {
     position: relative;
     width: 42px;
     height: 42px;
-    margin: 3px;
+    margin: 1.5px;
     background-color: #212a3a;
     border-radius: 50px;
 }
@@ -1580,19 +1589,10 @@ a.popular-producers__button {
 }
 
 
-/*letter-form*/
-.letter-form
+/*модальное окно*/
+.letter-form__hidden
 {
-  display: flex;
-  position: relative;
-  font-family: Cuprum, sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-
-  text-align: left;
-
-  color: #000;
-  background-color: #fff;
+  display:none;
 }
 
 .letter
@@ -1605,6 +1605,20 @@ a.popular-producers__button {
 
   border-top: 7px solid #ff5156;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  font-family: Cuprum, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+
+  text-align: left;
+
+  color: #000;
+  background-color: #fff;
 }
 
 .form-container-box {
@@ -1624,6 +1638,7 @@ a.popular-producers__button {
 .name-and-mail input {
   width: 220px;
   height: 38px;
+  border: solid 2px #dee3e4;
 }
 
 .name-and-mail label {
@@ -1645,41 +1660,97 @@ a.popular-producers__button {
   height: 114px;
 }
 
-.letter-form input,
+.letter input,
 textarea
 {
     border: solid 2px #dee3e4;
     background-color: #fff;
 }
 
-.letter-form input[type='text'],
+.letter input[type='text'],
 textarea
 {
-    font-family: PTSans-Regular, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
+  font-family: PTSans-Regular, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
 
-    text-align: left;
+  text-align: left;
 
-    color: #999;
+  color: #999;
+
+  padding-left: 14px;
 }
 
-.letter-form input:hover,
+.letter input:hover,
 textarea:hover
 {
     border-color: #b5b5b5;
 }
 
-.letter-form input:focus,
+.letter input:focus,
 textarea:focus
 {
     border-color: #ee3643;
 }
 
-.letter-form input[type=submit]
+/*Плэйсхолдеры*/
+.letter input[type='text']::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: PTSans-Regular, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+
+  color: #999999;
+
+  padding-top: 5px;
+}
+
+.letter input[type='text']::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-family: PTSans-Regular, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+
+  color: #999999;
+
+  padding-top: 5px;
+}
+
+.letter input[type='text']::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-family: PTSans-Regular, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+
+  color: #999999;
+
+  padding-top: 5px;
+}
+
+.letter input[type='text']::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-family: PTSans-Regular, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+
+  color: #999999;
+
+  padding-top: 5px;
+}
+
+/*Кнопка отправить*/
+
+.submit-button__wrapper {
+  display: flex;
+  background-color: #f4f4f4;
+  min-height: 112px;
+  width: 100%;
+  margin-top: 37px;
+}
+
+.submit-button__wrapper input[type=submit]
 {
-  position: absolute;
-  top: 355px;
+  margin: 37px 80px;
   cursor: pointer;
 
   font-family: Cuprum, sans-serif;
@@ -1696,25 +1767,17 @@ textarea:focus
   background-color: #ee3643;
 }
 
-.letter-form input[type=submit]:hover
+.submit-button__wrapper input[type=submit]:hover
 {
     background-color: #ca2c37;
 }
 
-.letter-form input[type=submit]:active
+.submit-button__wrapper input[type=submit]:active
 {
     background-color: #ba2732;
 }
 
-.submit-button__wrapper {
-  display: flex;
-  background-color: #f4f4f4;
-  min-height: 112px;
-  width: 100%;
-  margin-top: 37px;
-}
-
-.letter-form button
+.close-button
 {
   font: inherit;
 
@@ -1725,8 +1788,8 @@ textarea:focus
   position: absolute;
   width: 21px;
   height: 21px;
-  left: 582px;
-  top: 15px;
+  left: 584px;
+  top: 9px;
 }
 
 .visually-hidden
