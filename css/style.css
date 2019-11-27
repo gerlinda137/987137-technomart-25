@@ -1034,10 +1034,15 @@ a.popular-producers__button {
   background-repeat: no-repeat;
   background-size: 468px 261px;
   background-position-y: 29px;
-  padding-right: 320px;
-  margin-top: 13px;
   background-position-x: right;
+  margin-top: 13px;
+
 }
+
+.services__card--text {
+  padding-right: 320px;
+}
+
 .services__card h3 {
   font-family: Cuprum;
   font-weight: 400;
@@ -1056,12 +1061,48 @@ a.popular-producers__button {
 }
 
 /*Карточка гарантии*/
+.garanty-card__hidden {
+  display: none;
+}
+
 .garanty-card {
   padding-left: 80px;
+  background-image: url(../img/guarantee@3x.png);
+  background-size: 389px 283px;
+  background-position-y: 7px;
+  background-position-x: 320px;
 }
 
 .garanty-card p {
-  width: 379px;
+  width: 380px;
+}
+
+/*Кредит*/
+.credit-card__hidden {
+  display: none;
+}
+
+.credit-card {
+  background-image: url(../img/credit@3x.png);
+  background-size: 465px 285px;
+  background-position-y: 5px;
+  background-position-x: 165px;
+}
+
+.credit-card p {
+ margin-bottom: 26px;
+}
+
+.credit-card button {
+  font-family: Cuprum, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #ff5357;
+  text-transform: uppercase;
+  padding: 11px 46px 9px 44px;
+  border: none;
+  border-radius: 3px;
 }
 
 /*Каталог*/
