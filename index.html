@@ -100,9 +100,31 @@
             </ul>
             <div class="categories-list__second-row">
               <div class="categories-slider">
-                <h3>Дрели</h3>
-                <p>Соседям на радость!</p>
-                <a class="slider-button" href="#">Открыть каталог</a>
+                <div class="slider__item slider__item--active">
+                  <h3>Дрели</h3>
+                  <p>Соседям на радость!</p>
+                  <a class="slider-button" href="#">Открыть каталог</a>
+                </div>
+                <div class="slider__item second-slider visually-hidden">
+                  <h3>Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                  <a class="slider-button" href="#">Открыть каталог</a>
+                </div>
+                <div class="slider__navigation">
+                  <!-- Стрелка влево -->
+                  <button class="slider__navigation-prev" type="button">
+                    <img src="img\icon-left.svg" alt="Влево" width="22px" height="40px">
+                  </button>
+                  <!-- Стрелка вправо -->
+                  <button class="slider__navigation-next" type="button">
+                    <img src="img\icon-right.svg" alt="Вправо" width="22px" height="40px">
+                  </button>
+                </div>
+                <div class="slider__pagination">
+                  <!-- Круглые кнопки переключения слайдов -->
+                  <button class="slider__pagination-item" type="button"></button>
+                  <button class="slider__pagination-item slider__pagination-item--active" type="button"></button>
+                </div>
               </div>
               <ul class="categories-list__right-column">
                 <li> <h3 class="cat-list__title">Скидки 50%</h3>
