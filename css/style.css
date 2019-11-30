@@ -548,6 +548,9 @@ a.checkout:active
 .main-container h1
 {
     font-size: 30px;
+    font-weight: 400;
+    width: 100%;
+    padding: 32px 0 32px 30px;
 
     text-transform: uppercase;
 
@@ -1168,25 +1171,31 @@ a.popular-producers__button {
 /*Каталог*/
 .filters
 {
-    font-family: PTSans, sans-serif;
-    font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: PTSans, sans-serif;
+  font-size: 15px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    color: #000;
+  color: #000;
 }
 
 .filters legend
 {
-    font-size: 17px;
-    font-weight: 700;
+  font-size: 17px;
+  font-weight: 700;
 
-    letter-spacing: .2px;
+  letter-spacing: .2px;
 }
 
 .filters fieldset
 {
     border: none;
+}
+
+.checkboxes ul {
+  padding: 0;
 }
 
 .checkboxes li
@@ -1214,7 +1223,13 @@ a.popular-producers__button {
 }
 */
 
+.catalog {
+  display: flex;
+}
 
+.catalog-list {
+  padding: 0;
+}
 
 .catalog-item {
   display: flex;
