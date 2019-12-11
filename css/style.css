@@ -524,33 +524,6 @@ a.checkout:active
     flex-direction: column;
 }
 
-.breadcrumbs
-{
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-
-  display: flex;
-}
-
-.breadcrumbs-current,
-.breadcrumbs a
-{
-  font-family: PTSans, sans-serif;
-  font-size: 13px;
-
-  text-transform: uppercase;
-
-  padding-right: 15px;
-
-  color: #000;
-}
-
-.breadcrumbs-current
-{
-  line-height: 18px;
-}
-
 .main-container h1
 {
   font-size: 30px;
@@ -969,12 +942,12 @@ p.no-discount__button {
 }
 
 /*Поупулярные производители*/
-.catalog-poducers .catalog-goods__heading {
+.popular-poducers .popular-goods__heading {
   margin-top: 0;
   padding-bottom: 2px;
 }
 
-a.catalog-producers__button {
+a.popular-producers__button {
   padding: 10px 69px 7px 70px;
 }
 
@@ -1010,6 +983,7 @@ a.catalog-producers__button {
 .prodecers-link {
   margin: auto;
 }
+
 
 /*Сервисы*/
 
@@ -1281,6 +1255,35 @@ a.catalog-producers__button {
 /*Каталог*/
 .catalog-navigation {
   margin-bottom: 0;
+}
+
+.breadcrumbs
+{
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+
+  display: flex;
+}
+
+.breadcrumbs-current,
+.breadcrumbs a
+{
+  font-family: PTSans, sans-serif;
+  font-size: 13px;
+
+  text-transform: uppercase;
+
+  padding-right: 15px;
+
+  color: #000;
+}
+
+.breadcrumbs-current
+{
+  line-height: 18px;
+  padding-top: 1.5px;
+
 }
 
 .filters
