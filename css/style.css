@@ -1451,6 +1451,23 @@ p.sorting-title {
   list-style: none;
 }
 
+.checkboxes-list input {
+  display: none;
+}
+
+.checkbox-label {
+  cursor: pointer;
+}
+
+.checkbox-label span {
+  display: block;
+  float: left;
+  width: 23px;
+  height: 23px;
+  border-radius: 3px;
+  border: 2px #c5c5c5 solid;
+  margin-right: 12px;
+}
 
 
 .show-button
