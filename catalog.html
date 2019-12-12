@@ -93,16 +93,34 @@
         <h1>Перфораторы</h1>
       </div>
       <div class="filters__and__sorting container-box__inner">
-        <div class="filters__title">
-          <p>фильтры:</p>
+        <div class="filters-title__container">
+          <p class="filters-title">фильтр:</p>
         </div>
         <div class="sorting">
-          <p class="sorting__title">сортировка:</p>
-          <ul class="sorting-types">
-            <li>по цене</li>
-            <li>по типу</li>
-            <li>по функционалу</li>
-          </ul>
+          <div class="sorting-title__wrapper">
+            <p class="sorting-title">сортировка:</p>
+          </div>
+          <div class="sorting-types-and-buttons__wrapper">
+            <div class="sorting-types__wrapper">
+              <ul class="sorting-types">
+                <li><button>по цене</button></li>
+                <li><button>по типу</button></li>
+                <li><button>по функционалу</button></li>
+              </ul>
+            </div>
+            <div class="sorting-buttons">
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 0L0 10h11z"/>
+                </svg>
+              </button>
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path d="M5.5 10L0 0h11"/>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="filter__and__catalog container-box__inner">
@@ -112,7 +130,7 @@
             <form action="https://echo.catalog.html" method="get">
               <fieldset class="checkboxes">
                 <legend>Производители:</legend>
-                <ul>
+                <ul class="checkboxes-list">
                   <li><input type="checkbox" name="BOSCH" id="bosch-field" checked>
                   <label for="bosch-field">BOSCH</label></li>
                   <li><input type="checkbox" name="interscall" id="interscall-field">
