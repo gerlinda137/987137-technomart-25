@@ -131,13 +131,20 @@
               <fieldset class="checkboxes">
                 <legend>Производители:</legend>
                 <ul class="checkboxes-list">
-                  <li><input type="checkbox" name="BOSCH" id="bosch-field" checked>
-                    <label class="checkbox-label" for="bosch-field">
+                  <li>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="BOSCH" checked>
                       <span></span>
                       BOSCH
-                    </label></li>
-                  <li><input type="checkbox" name="interscall" id="interscall-field">
-                  <label for="interscall-field">ИНТЕРСКОЛ</label></li>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="interscall">
+                      <span></span>
+                      ИНТЕРСКОЛ
+                    </label>
+                  </li>
                   <li><input type="checkbox" name="makita" id="makita-field" checked>
                   <label for="makita-field">MAKITA</label></li>
                   <li><input type="checkbox" name="dewalt" id="dewalt-field">
@@ -162,9 +169,9 @@
         </div>
 
         <div class="catalog-goods__wrapper">
-          <section class="catalog-goods">
+          <section class="catalog-goods container-box__inner">
             <h2 class="visually-hidden">Список товаров</h2>
-            <ul class="catalog-goods__items container-box__inner">
+            <ul class="catalog-goods__items">
               <li class="catalog-item">
                 <a href="catalog-item.html">  <img src="img/BOSCH BFG 3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </a>
