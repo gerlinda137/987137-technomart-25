@@ -1427,6 +1427,57 @@ p.sorting-title {
 
   color: #000;
 }
+/*Фильтр цены*/
+.price-filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-filter__title {
+  font-family: PTSans, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0;
+}
+
+.range-buttons__wrapper {
+  display: flex;
+  position: relative;
+  background-color: #f7f3ec;
+  width: 220px;
+  min-height: 80px;
+  align-items: center;
+}
+
+.range-scale {
+  display: flex;
+  width: 152px;
+  height: 2px;
+  background-color: #00cc76;
+  z-index: 1;
+  margin-left: -155px;
+}
+
+.range-buttons__wrapper button {
+  z-index: 2;
+  margin-left: 20px;
+  border: none;
+  width: 20px;
+  height: 22px;
+  background-image:url(../img/filter-button.svg);
+  background-color:transparent;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+button.range-end {
+  margin-left: 120px;
+}
+
+
+
+/*Чекбоксы*/
 
 .filters legend
 {
@@ -1451,15 +1502,22 @@ p.sorting-title {
   list-style: none;
 }
 
-.checkboxes-list input {
-  display: none;
-}
+
 
 .checkbox-label {
   cursor: pointer;
 }
 
+.checkbox-label input {
+  display: none;
+}
+
+.checkbox-label input:checked + .checkbox-label span {
+
+}
+
 .checkbox-label span {
+  position: relative;
   display: block;
   float: left;
   width: 23px;
@@ -1469,6 +1527,12 @@ p.sorting-title {
   margin-right: 12px;
 }
 
+.checkbox-label span::after {
+  content: '';
+  position: absolute;
+  background-image: url();
+
+}
 
 .show-button
 {
