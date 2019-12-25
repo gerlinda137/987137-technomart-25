@@ -140,16 +140,12 @@
                 <legend>Производители:</legend>
                 <ul class="checkboxes-list">
                   <li>
-                    <label class="checkbox-label">
-                      <input type="checkbox" name="BOSCH" checked>
-                      <span></span>
-                      BOSCH
-                    </label>
+                    <input class="checkbox-input" type="checkbox" name="BOSCH" id="bosch-field" checked>
+                    <label class="checkbox-label" for="bosch-field">BOSCH</label>
                   </li>
                   <li>
                     <label class="checkbox-label">
                       <input type="checkbox" name="interscall">
-                      <span></span>
                       ИНТЕРСКОЛ
                     </label>
                   </li>
@@ -163,13 +159,17 @@
               </fieldset>
               <fieldset>
                 <legend>Питание:</legend>
-                <label>
-                  <input type="radio" name="type" value="a" checked> Аккумуляторные
+                <label class="radiobuttons-label">
+                  <input type="radio" name="type" value="a" checked>
+                  <span></span>
+                  Аккумуляторные
                 </label>
                 <br>
-                <label>
+                <label class="radiobuttons-label">
                   <input type="radio" name="type" value="b"> Сетевые
-                </label><br>
+                  <span></span>
+                </label>
+                <br>
                 <input class="show-button" type="submit" name="show" value="Показать">
               </fieldset>
             </form>
