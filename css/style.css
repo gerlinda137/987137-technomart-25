@@ -1259,11 +1259,12 @@ a.popular-producers__button {
 
 .breadcrumbs
 {
+  display: flex;
+  flex-wrap: wrap;
+
   list-style: none;
   padding: 0;
   margin: 20px 0;
-
-  display: flex;
 }
 
 .breadcrumbs-current,
@@ -1284,6 +1285,10 @@ a.popular-producers__button {
   content: '';
   position: absolute;
   background-image: url(../img/icon-right-small.svg);
+  width: 8px;
+  height: 12px;
+  margin-left: 15px;
+
 }
 
 .breadcrumbs-current
@@ -1438,6 +1443,15 @@ p.sorting-title {
 .price-filter {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.price-filter::after {
+  content: '';
+  border: solid 0.5px #e5e5e5;
+  width: 220px;
+  position: absolute;
+  top: 181px;
 }
 
 .price-filter__title {
@@ -1445,7 +1459,7 @@ p.sorting-title {
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
-  margin: 0;
+  margin: -14px 0 14px 0;
 }
 
 .range-buttons__wrapper {
@@ -1497,9 +1511,38 @@ button.range-end {
   left: 160px;
 }
 
+.number-range {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9px;
+}
 
+.number-range input {
+  width: 95px;
+  height: 38px;
+  background-color: #f7f3ec;
+  border: none;
+  text-align: center;
+  font-family: PTSans, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  padding-left: 20px;
+}
+
+.number-range span {
+  display: flex;
+  margin-top: 18px;
+  width: 10px;
+  height: 1px;
+  background-color: #000;
+
+}
 
 /*Чекбоксы*/
+
+fieldset {
+  margin-left: 0;
+}
 
 .filters legend
 {
@@ -1513,6 +1556,20 @@ button.range-end {
 {
   border: none;
   padding: 0;
+}
+
+.checkboxes {
+  display: flex;
+  position: relative;
+  margin-top: 47px;
+}
+
+.checkboxes::after {
+  content: '';
+  border: solid 0.5px #e5e5e5;
+  width: 220px;
+  position: absolute;
+
 }
 
 .checkboxes-list {
@@ -1548,8 +1605,8 @@ button.range-end {
   background-size: contain;
   position: absolute;
   opacity: 0.7;
-  left: -2px;
-  top: -2px;
+  left: 0;
+  top: -2.75px;
 }
 
 .checkbox-input:checked + label:before{
@@ -1567,31 +1624,67 @@ button.range-end {
 }
 
 /*Радиобатоны*/
+.radiobuttons {
+  display: flex;
+  margin-top: 25px;
+}
+
+.radiobuttons legend {
+  margin-bottom: 19px;
+}
+
+.radiobuttons-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.radiobuttons-list li {
+  margin-bottom: 24px;
+}
+
 .radiobuttons-label {
   cursor: pointer;
 }
 
-.radiobuttons-label input {
+.radiobuttons-input {
   display: none;
 }
 
-.radiobuttons-label span {
+.radiobuttons-input + label {
   position: relative;
-  display: block;
-  float: left;
+  padding-left: 35px;
+}
+
+.radiobuttons-input + label::before {
+  content: "";
   width: 25px;
   height: 25px;
-  border-radius: 50px;
-  border: 4px #c5c5c5 solid;
-  margin-right: 12px;
-}
-
-.radiobuttons-label span::after {
-  content: '';
+  display: block;
+  background: url(../img/radio-off.svg) center center no-repeat;
+  background-size: contain;
   position: absolute;
-  background-image: url();
-
+  opacity: 0.7;
+  left: 0;
+  top: -2.75px;
 }
+
+.radiobuttons-input:checked + label:before{
+  content: "";
+  width: 25px;
+  background: url(../img/radio-on.svg) center center no-repeat;
+}
+
+.radiobuttons-input:hover + label::before {
+  opacity: 1;
+}
+
+.radiobuttons-input:disabled + label::before {
+  opacity: 0.3;
+}
+
 
 /*Кнопка отправики*/
 .show-button
@@ -1599,13 +1692,15 @@ button.range-end {
   display: flex;
   font-family: PTSans, sans-serif;
   font-size: 13px;
+  line-height: 18px;
 
   text-transform: uppercase;
   border: solid 1px #e5e5e5;
   border-radius: 3px;
   background-color: transparent;
   cursor: pointer;
-  padding: 15px 39px 14px 39px;
+  padding: 10px 33px 9px 39px;
+  margin-top: 56px;
 }
 
 .show-button:hover {
