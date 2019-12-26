@@ -1994,6 +1994,10 @@ button.pages-buttons__active {
   background-color: #f4f7f9;
 }
 
+p.some-words__text {
+  margin-bottom: 68px;
+}
+
 /*Футер*/
 .main-footer
 {
