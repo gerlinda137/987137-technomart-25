@@ -865,6 +865,7 @@ button.slider__navigation-next {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: -27px;
 }
 
 .catalog-goods__heading {
@@ -915,6 +916,10 @@ button.slider__navigation-next {
   padding-left: 0;
   margin-top: 21px;
   margin-bottom: 21px;
+}
+
+.catalog-version__items {
+  margin-left: 5px;
 }
 
 p.no-discount__button {
@@ -1762,6 +1767,10 @@ fieldset {
   border: 1px solid #e5e5e5;
   position: relative;
 
+}
+
+.catalog-version__items .catalog-item {
+  margin-bottom: 20px;
 }
 
 .catalog-item:hover .catalog-item__hover-button {
