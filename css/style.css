@@ -1773,6 +1773,10 @@ fieldset {
   margin-bottom: 20px;
 }
 
+.catalog-version__items {
+  margin-bottom: 15px;
+}
+
 .catalog-item:hover .catalog-item__hover-button {
   display: block;
 }
