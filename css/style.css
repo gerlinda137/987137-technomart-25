@@ -1442,6 +1442,11 @@ button.sorting-types__active-button {
  margin-right: 14px;
 }
 
+button.sorting-button__active {
+  fill: #ee3643;
+  opacity: 1;
+}
+
 /*Фильтры*/
 .filters
 {
