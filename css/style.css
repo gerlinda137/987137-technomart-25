@@ -1924,6 +1924,7 @@ fieldset {
 .catalog__pages-buttons {
   display: flex;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .pages-buttons__list {
