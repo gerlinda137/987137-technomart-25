@@ -1414,6 +1414,7 @@ button.sorting-types__active-button {
 
 .sorting-buttons {
   display: flex;
+  margin-top: -5px;
 }
 
 .sorting-buttons button {
@@ -1440,6 +1441,7 @@ button.sorting-types__active-button {
 
 .sorting-buttons button:last-child {
  margin-right: 14px;
+ margin-left: 22px;
 }
 
 button.sorting-button__active {
