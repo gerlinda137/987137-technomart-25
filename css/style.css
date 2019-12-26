@@ -1395,6 +1395,11 @@ p.sorting-title {
   border-bottom: none;
 }
 
+button.sorting-types__active-button {
+  color: #ee3643;
+  border-bottom: none;
+}
+
 .sorting-types li:first-child {
   margin-right: 69px;
 }
