@@ -1288,6 +1288,7 @@ a.popular-producers__button {
   width: 8px;
   height: 12px;
   margin-left: 15px;
+  margin-right: 15px;
 
 }
 
@@ -1718,6 +1719,8 @@ fieldset {
   outline-offset: 0;
 }
 
+/*Карточки каталога*/
+
 .item-hover
 {
   display: none;
@@ -1897,6 +1900,74 @@ fieldset {
 
   height: 38px;
   margin-bottom: 19px;
+}
+
+/*Кнопки переключения страниц*/
+
+.catalog__pages-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.pages-buttons__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+
+}
+
+.pages-buttons__list button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-family: PTSans, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  border: solid 1px #e5e5e5;
+  border-radius: 3px;
+  background-image:none;
+  background-color:transparent;
+  box-shadow: none;
+  cursor: pointer;
+  margin: 0 5px 0 5px;
+}
+
+.pages-buttons__list button:hover,
+.pages-buttons__next:hover {
+  border-color: #bdc6ca;
+}
+
+.pages-buttons__list button:active,
+.pages-buttons__list button:focus,
+.pages-buttons__next:active,
+.pages-buttons__next:focus {
+  border-color: #ee3643;
+  outline: 0;
+  outline-offset: 0
+}
+
+button.pages-buttons__active {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.pages-buttons__next {
+  font-family: PTSans, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: solid 1px #e5e5e5;
+  border-radius: 3px;
+  background-image:none;
+  background-color:transparent;
+  box-shadow: none;
+  cursor: pointer;
+  width: 140px;
+  height: 38px;
+  margin-left: 5px;
 }
 
 /*Пара слов о перфораторах*/
