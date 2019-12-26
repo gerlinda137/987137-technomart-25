@@ -1277,6 +1277,13 @@ a.popular-producers__button {
   padding-right: 15px;
 
   color: #000;
+  position: relative;
+}
+
+.breadcrumbs a::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/icon-right-small.svg);
 }
 
 .breadcrumbs-current
@@ -1510,23 +1517,54 @@ button.range-end {
 
 .checkboxes-list {
   padding: 0;
+  margin-top: 20px;
 }
 
 .checkboxes-list li
 {
   list-style: none;
+  margin-bottom: 23px;
 }
 
 .checkbox-label {
   cursor: pointer;
 }
 
- .checkbox-input + label {
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-input + label {
   position: relative;
   padding-left: 35px;
 }
 
+.checkbox-input + label::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  display: block;
+  background: url(../img/checkbox-off.svg) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  opacity: 0.7;
+  left: -2px;
+  top: -2px;
+}
 
+.checkbox-input:checked + label:before{
+  content: "";
+  width: 27px;
+  background: url(../img/checkbox-on.svg) center center no-repeat;
+}
+
+.checkbox-input:hover + label::before {
+  opacity: 1;
+}
+
+.checkbox-input:disabled + label::before {
+  opacity: 0.3;
+}
 
 /*Радиобатоны*/
 .radiobuttons-label {
