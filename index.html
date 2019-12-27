@@ -287,7 +287,7 @@
             <div class="map">
               <img src="img/map.jpg" width:="300px" height="158px" alt="Карта">
             </div>
-            <a href="#">Заблудились? Напишите нам!</a>
+            <a class="contact-us" href="#">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </main>
@@ -396,5 +396,20 @@
         </form>
       </div>
     </div>
+    <script>
+      var letter = document.querySelector(".contact-us");
+      var letterForm = document.querySelector(".letter-form__hidden");
+
+      letter.addEventListener("click", function(evt){
+        evt.preventDefault();
+        letterForm.classList.add("modal-show");
+      });
+
+      var closeButton = document.querySelector(".close-button");
+      closeButton.addEventListener("click", function(){
+        letterForm.classList.remove("modal-show");
+      });
+
+    </script>
   </body>
 </html>
