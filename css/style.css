@@ -93,7 +93,7 @@ html{
   display: flex;
   color: #fff;
   padding-top: 14px;
-  padding-bottom: 13px;
+  padding-bottom: 14px;
 }
 
 .purchase a:hover
@@ -119,6 +119,19 @@ html{
 
 .purchase-link:active svg {
   opacity: 0.5;
+}
+
+.purchase-link__active {
+  background-color: #ee3643;
+  padding-left: 41px;
+}
+
+a.purchase-link__active:hover {
+  background-color: #ca2c37;
+}
+
+a.purchase-link__active:active {
+  background-color: #ba2732;
 }
 
 .purchase-icon {
