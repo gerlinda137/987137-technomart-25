@@ -431,16 +431,49 @@ a.checkout:active
 
 .user-name a
 {
-    font-size: 21px;
-    line-height: 21px;
-
-    padding-left: 47px;
-
-    color: #000;
+  font-size: 21px;
+  line-height: 21px;
+  padding-left: 47px;
+  color: #000;
+  position: relative;
 }
 .user-name a:active,
 .menu-elements a:active
 {
+  opacity: 0.3;
+}
+
+.user-name a::before {
+  content: '';
+  background-image: url(../img/icon-user.svg);
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  left: 13px;
+}
+
+.user-name a::after {
+  content: '';
+  background-image: url(../img/icon-logout.svg);
+  width: 20px;
+  height: 17px;
+  position: absolute;
+  left: 270px;
+  top: 2px;
+}
+
+.user-name a::before,
+.user-name a::after {
+  opacity: 0.3;
+}
+
+.user-name a:hover::before,
+.user-name a:hover::after {
+  opacity: 1;
+}
+
+.user-name a:active::before,
+.user-name a:active::after {
   opacity: 0.3;
 }
 
