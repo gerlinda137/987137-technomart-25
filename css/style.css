@@ -409,25 +409,24 @@ a.checkout:active
     color: rgba(0, 0, 0, .3);
 }
 
-/*.authorization .sign-up
-{
-    padding: 14px 25px 11px 25px;
-}
+/*Равшан джамшутович*/
 
-.authorization .log-in
-{
-    padding: 14px 27px 15px 48px;
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 49px;
 }
-*/
 
 .user-profile p
 {
-    width: 299px;
-    height: 45px;
+  display: flex;
+  padding: 11px 67px 11px 0px;
+  margin-bottom: 7px;
 
-    text-align: left;
+  text-align: left;
 
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .user-name a
@@ -442,32 +441,48 @@ a.checkout:active
 .user-name a:active,
 .menu-elements a:active
 {
-    opacity: .3;
+  opacity: 0.3;
 }
 
 .menu-elements
 {
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-elements li:first-child {
+  margin-left: 17px;
+}
+
+.menu-elements li:last-child {
+  margin-right: 71px;
 }
 
 .menu-elements a
 {
-    font-size: 16px;
-
-    text-decoration: underline;
-
-    color: #32425c;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #32425c;
 }
 
 .menu-elements a:not(:active):hover
 {
-    color: #ee3643;
+  color: #ee3643;
 }
 
-.authorization.catalog
-{
-    display: none;
+.dot {
+  display: flex;
+  margin-top: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: #32425c;
 }
+
+/*Навигация*/
 
 .main-navigation
 {
@@ -2233,7 +2248,7 @@ p.some-words__text {
 }
 
 
-/*модальное окно*/
+/*модальное окно главной страницы*/
 .letter-form__hidden
 {
   display:none;
@@ -2434,6 +2449,15 @@ textarea::-ms-input-placeholder {
   height: 21px;
   left: 584px;
   top: 9px;
+}
+
+/*Модальное окно каталога - Товар добавлен в корзину*/
+.added-to-basket {
+  display: flex;
+}
+
+.added-to-basket p {
+
 }
 
 .visually-hidden
