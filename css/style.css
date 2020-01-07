@@ -2241,6 +2241,12 @@ p.some-words__text {
   margin-bottom: 20px;
 }
 
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 228px;
+}
+
 .social-media
 {
     list-style: none;
