@@ -780,7 +780,7 @@ top: 31px;
 
 .slider__item
 {
-  display: flex;
+  display: none;
   position: relative;
   flex-direction: column;
   margin-top: 21px;
@@ -790,6 +790,10 @@ top: 31px;
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFF;
+}
+
+.slider__item--active {
+  display: flex;
 }
 
 .second-slider {

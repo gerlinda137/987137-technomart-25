@@ -9,18 +9,18 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div>
       <header class="main-header">
         <section class="user-functions container-box">
           <div class="container-box__inner">
             <ul class="user-functions__list">
               <li>
-                <a class="main-header-logo" href="index.html">
+                <a class="main-header-logo">
                   <img src="img\technomart-logo.svg" width="109" height="19" alt="Логотип Техномарта">
                 </a>
                 <div class="header-search">
                   <h2 class="visually-hidden">Поиск</h2>
                   <form class="search" action="index.html" method="get">
+                    <label class="visually-hidden" for="search">Поиск</label>
                     <input type="search" name="site-search" placeholder="Поиск:">
                     <button class="search-button" type="submit">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
@@ -65,7 +65,7 @@
             <div class="authorization">
               <ul class="authorization-list">
                 <li><a class="log-in" href="log-in.html">Войти</a></li>
-                <li><a class="sign-up"href="sign-up.html">Регистрация</a></li>
+                <li><a class="sign-up" href="sign-up.html">Регистрация</a></li>
               </ul>
             </div>
           </div>
@@ -103,12 +103,12 @@
                 <div class="slider__item slider__item--active">
                   <h3>Дрели</h3>
                   <p>Соседям на радость!</p>
-                  <a class="slider-button" href="#">Открыть каталог</a>
+                  <a class="slider-button" href="catalog.html">Открыть каталог</a>
                 </div>
-                <div class="slider__item second-slider visually-hidden">
+                <div class="slider__item second-slider">
                   <h3>Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
-                  <a class="slider-button" href="#">Открыть каталог</a>
+                  <a class="slider-button" href="catalog.html">Открыть каталог</a>
                 </div>
                 <div class="slider__navigation">
                   <!-- Стрелка влево -->
@@ -296,7 +296,7 @@
         <div class="footer-wrapper container-box__inner">
           <div class="footer-logo_and_contacts">
             <div class="footer-logo">
-              <a class="main-footer-logo" href="main.html">
+              <a class="main-footer-logo">
                 <img src="img\technomart-logo.svg" width="138" height="23" alt="Логотип Техномарта">
               </a>
             </div>
@@ -395,7 +395,6 @@
           </div>
         </form>
       </div>
-    </div>
     <script>
       var letter = document.querySelector(".contact-us");
       var letterForm = document.querySelector(".letter-form__hidden");
