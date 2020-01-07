@@ -1074,6 +1074,12 @@ a.popular-producers__button {
   margin-top: 37px;
 }
 
+.services__general-info p {
+  display: flex;
+  max-width: 440px;
+  flex-wrap: wrap;
+}
+
 .services__slider {
   display: flex;
   justify-content: space-between;
