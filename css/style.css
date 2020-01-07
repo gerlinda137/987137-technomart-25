@@ -1885,8 +1885,6 @@ fieldset {
   border-radius: 3px;
   cursor: pointer;
   margin-bottom: 7px;
-  padding-top: 11px;
-
 }
 
 .to-buy {
@@ -1894,6 +1892,7 @@ fieldset {
   box-shadow: inset 0px -3px 0 0 #367315;
   border-style: none;
   color: #fff;
+  padding-top: 11px;
 
   position: relative;
 }
@@ -1927,6 +1926,7 @@ fieldset {
   background-color: #fff;
   border: 3px solid #63a63e;
   color: #32425c;
+  padding-top: 10px;
 }
 
 .to-bookmarks:hover {
