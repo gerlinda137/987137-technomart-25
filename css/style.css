@@ -1142,7 +1142,7 @@ a.popular-producers__button {
 }
 
 .services__card {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-image: url(../img/delivery@3x.png);
   background-repeat: no-repeat;
@@ -1150,8 +1150,12 @@ a.popular-producers__button {
   background-position-y: 29px;
   background-position-x: right;
   margin-top: 13px;
-
 }
+
+.services-card--active {
+  display: flex;
+}
+
 
 .services__card--text {
   padding-right: 320px;
@@ -1175,11 +1179,8 @@ a.popular-producers__button {
 }
 
 /*Карточка гарантии*/
-.garanty-card__hidden {
-  display: none;
-}
-
 .garanty-card {
+  display: none;
   padding-left: 80px;
   background-image: url(../img/guarantee@3x.png);
   background-size: 389px 283px;
@@ -1192,11 +1193,8 @@ a.popular-producers__button {
 }
 
 /*Кредит*/
-.credit-card__hidden {
-  display: none;
-}
-
 .credit-card {
+  display: none;
   background-image: url(../img/credit@3x.png);
   background-size: 465px 285px;
   background-position-y: 5px;
