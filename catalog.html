@@ -438,21 +438,6 @@
         </div>
       </div>
     </div>
-    <script>
-      var toCart = document.querySelectorAll(".to-buy");
-      var toCartModal = document.querySelector(".added-to-basket__hidden");
-
-      toCart.forEach(function(item) {
-        item.addEventListener("click", function(){
-          toCartModal.classList.add("modal-show");
-        });
-      });
-
-      var closeButton = document.querySelector(".close-button");
-      closeButton.addEventListener("click", function(){
-        toCartModal.classList.remove("modal-show");
-      });
-
-    </script>
+    <script src="js/script-catalog.js"></script>
   </body>
 </html>
