@@ -501,6 +501,7 @@ a.checkout:active
 
 .menu-elements li:first-child {
   margin-left: 17px;
+  position: relative;
 }
 
 .menu-elements li:last-child {
@@ -519,8 +520,10 @@ a.checkout:active
   color: #ee3643;
 }
 
-.dot {
-  display: flex;
+.menu-elements li:first-child::after {
+  content: '';
+  position: absolute;
+  left: 91px;
   margin-top: 8px;
   width: 4px;
   height: 4px;
@@ -1280,17 +1283,25 @@ a.popular-producers__button {
 
 .info a:hover
 {
-    background-color: #ca2c37;
+  background-color: #ca2c37;
 }
 
 .info a:active
 {
-    background-color: #ba2732;
+  background-color: #ba2732;
 }
 
 .map
 {
   margin-top: 7px;
+}
+
+.map a {
+  margin-top: 60px;
+}
+
+.map-link img {
+  margin-top: 45px;
 }
 
 .contacts a
@@ -1303,7 +1314,7 @@ a.popular-producers__button {
   width: 300px;
   height: 38px;
 
-  margin-top: 36px;
+  margin-top: 37px;
   margin-bottom: 86px;
 
   user-select: none;
