@@ -2031,8 +2031,9 @@ fieldset {
 
 }
 
-.pages-buttons__list button {
+.pages-buttons__list a {
   display: flex;
+  color: #000000;
   align-items: center;
   justify-content: center;
   width: 38px;
@@ -2042,20 +2043,17 @@ fieldset {
   line-height: 18px;
   border: solid 1px #e5e5e5;
   border-radius: 3px;
-  background-image:none;
-  background-color:transparent;
-  box-shadow: none;
   cursor: pointer;
   margin: 0 5px 0 5px;
 }
 
-.pages-buttons__list button:hover,
+.pages-buttons__list a:hover,
 .pages-buttons__next:hover {
   border-color: #bdc6ca;
 }
 
-.pages-buttons__list button:active,
-.pages-buttons__list button:focus,
+.pages-buttons__list a:active,
+.pages-buttons__list a:focus,
 .pages-buttons__next:active,
 .pages-buttons__next:focus {
   border-color: #ee3643;
@@ -2063,7 +2061,7 @@ fieldset {
   outline-offset: 0
 }
 
-button.pages-buttons__active {
+a.pages-buttons__active {
   color: #ffffff;
   background-color: #ee3643;
 }
@@ -2075,9 +2073,8 @@ button.pages-buttons__active {
   text-transform: uppercase;
   border: solid 1px #e5e5e5;
   border-radius: 3px;
-  background-image:none;
-  background-color:transparent;
-  box-shadow: none;
+  color: #000000;
+  padding: 9px 32px 13px 25px;
   cursor: pointer;
   width: 140px;
   height: 38px;
