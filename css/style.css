@@ -574,11 +574,13 @@ a.checkout:active
 .site-navigation li:hover
 {
   background-color: #293449;
+
 }
 
-.site-navigation li:active
+.site-navigation li:active,
+.site-navigation a:active
 {
-    color: #f1f5f7;
+    color: rgba(255, 255, 255, 0.5);
     background-color: #1d2739;
 }
 
