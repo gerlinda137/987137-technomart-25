@@ -436,6 +436,7 @@ a.checkout:active
   display: flex;
   padding: 11px 67px 11px 0px;
   margin-bottom: 7px;
+  flex-wrap: wrap;
 
   text-align: left;
 
@@ -456,7 +457,7 @@ a.checkout:active
   opacity: 0.3;
 }
 
-.user-name a::before {
+.user-name__log-in::before {
   content: '';
   background-image: url(../img/icon-user.svg);
   width: 20px;
@@ -465,14 +466,14 @@ a.checkout:active
   left: 13px;
 }
 
-.user-name a::after {
+.user-name__log-out::after {
   content: '';
   background-image: url(../img/icon-logout.svg);
   width: 20px;
   height: 17px;
   position: absolute;
-  left: 270px;
-  top: 2px;
+  left: 295px;
+  top: -19px;
 }
 
 .user-name a::before,
