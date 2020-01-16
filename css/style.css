@@ -224,9 +224,12 @@ a.purchase-link__active:active {
 
 }
 
-.search input:hover
+.search input:hover {
+  background-color: #212a3a;
+}
+.search input:hover + .search-button svg
 {
-    background-color: #212a3a;
+    opacity: 1;
 }
 
 .search input:focus
@@ -261,10 +264,6 @@ a.purchase-link__active:active {
 .search-button svg {
   fill: #fff;
   opacity: 0.3;
-}
-
-.search-button svg:hover {
-  opacity: 1;
 }
 
 a.full
