@@ -376,6 +376,7 @@ a.checkout:active {
   flex-wrap: wrap;
   text-align: left;
   background-color: #fff;
+  position: relative;
 }
 
 .user-name a {
@@ -400,14 +401,24 @@ a.checkout:active {
   left: 13px;
 }
 
+a.user-name__log-out{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+}
+
 .user-name__log-out::after {
   content: '';
   background-image: url(../img/icon-logout.svg);
   width: 20px;
   height: 17px;
+  display: block;
   position: absolute;
-  left: 295px;
-  top: -19px;
+  top: 13px;
+  right: 10px;
 }
 
 .user-name a::before,
@@ -1851,7 +1862,7 @@ fieldset {
 .catalog__pages-buttons {
   display: flex;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 42px;
 }
 
 .pages-buttons__list {
@@ -1914,6 +1925,10 @@ a.pages-buttons__active {
 /*Пара слов о перфораторах*/
 .some-words {
   background-color: #f4f7f9;
+}
+
+.some-words__title {
+  padding-top: 38px;
 }
 
 p.some-words__text {
