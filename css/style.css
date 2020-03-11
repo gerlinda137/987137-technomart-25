@@ -277,6 +277,7 @@ a.checkout:active {
 
 .header-contacts {
  padding-top: 57px;
+ flex-shrink: 0;
 }
 
 .header-contacts a {
@@ -494,7 +495,7 @@ a.user-name__log-out{
 .site-navigation li {
   font-family: Cuprum, sans-serif;
   list-style: none;
-  padding: 21px 30.5px;
+  padding: 21px 30px;
   display: flex;
 }
 
@@ -662,6 +663,8 @@ top: 31px;
   position: absolute;
   left: 240px;
   top: 0;
+  bottom: 0;
+  right: 0;
   background-image: url(../img/new-flag.png);
   background-repeat: no-repeat;
   content: "";
@@ -912,6 +915,7 @@ p.no-discount__button {
 .new-item::after {
   position: absolute;
   left: 159px;
+  top:0;
   background-image: url(../img/new-flag.png);
   background-repeat: no-repeat;
   content: "";
@@ -949,6 +953,8 @@ a.popular-producers__button {
   display: flex;
   border: solid 1px #eaeaea;
   margin: 2px 0 18px;
+  align-items: center;
+  justify-content: center;
 }
 
 .producers-list li:hover {
@@ -958,11 +964,6 @@ a.popular-producers__button {
 .producers-list li:active {
   opacity: 0.3;
 }
-
-.producers-link {
-  margin: auto;
-}
-
 
 /*Сервисы*/
 
@@ -1064,11 +1065,6 @@ a.popular-producers__button {
   margin-top: 13px;
 }
 
-.services-card--active {
-  display: flex;
-}
-
-
 .services__card--text {
   padding-right: 320px;
 }
@@ -1126,6 +1122,10 @@ a.popular-producers__button {
   padding: 11px 46px 9px 44px;
   border: none;
   border-radius: 3px;
+}
+
+.services-card--active {
+  display: flex;
 }
 
 .companies {
@@ -1742,6 +1742,8 @@ fieldset {
   height: 164px;
   background-color: #fff;
   display: none;
+  top: 0;
+  left: 0;
 }
 
 .hover-button__wrapper {
@@ -1827,6 +1829,8 @@ fieldset {
 
 .item-name a {
   display: flex;
+  width: 100%;
+  justify-content: center;
   font-family: PTSans, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -2142,6 +2146,97 @@ p.some-words__text {
 }
 
 
+/*Анимация модального окна*/
+
+@-webkit-keyframes bounce {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  75% {
+    opacity: .75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  75% {
+    opacity: .75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 /*модальное окно главной страницы*/
 .letter-form__hidden {
   display:none;
@@ -2165,6 +2260,11 @@ p.some-words__text {
   text-align: left;
   color: #000;
   background-color: #fff;
+
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .form-container-box {
@@ -2391,7 +2491,19 @@ a.further-actions__active-button {
   color: #ffffff;
 }
 
-/*Служебный класс*/
+/*Карта*/
+
+.modal-map {
+  display: flex;
+  flex-direction:column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+/*Служебные классы*/
 
 .visually-hidden {
   position: absolute;
@@ -2403,4 +2515,5 @@ a.further-actions__active-button {
 
 .modal-show {
   display: block;
+  animation: bounce 0.3s;
 }

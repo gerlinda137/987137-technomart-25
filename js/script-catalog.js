@@ -1,4 +1,4 @@
-//скрипты catalog.html
+скрипты catalog.html
 let toCart = document.querySelectorAll(".to-buy");
 let toCartModal = document.querySelector(".added-to-basket__hidden");
 

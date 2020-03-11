@@ -1,12 +1,50 @@
 //Скрипты index.html
 
 //Модальное окно
-let letter = document.querySelector(".contact-us");
+let letterLink = document.querySelector(".contact-us");
 let letterForm = document.querySelector(".letter-form__hidden");
+let letter = letterForm.querySelector(".letter");
+let name = letterForm.querySelector("[name=name]");
+let email = letterForm.querySelector("[name=e-mail]");
 
-letter.addEventListener("click", function(evt){
+let isStorageSupport = true;
+let storage = "";
+
+try {
+  storage = localStorage.getItem("name");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+letterLink.addEventListener("click", function(evt){
   evt.preventDefault();
   letterForm.classList.add("modal-show");
+  if (storage) {
+  name.value = storage;
+  email.focus();
+} else {
+  name.focus();
+}
+});
+
+letter.addEventListener("submit", function (evt) {
+  if (!name.value || !email.value) {
+    evt.preventDefault();
+    letterForm.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("name", login.value);
+    }
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (letterForm.classList.contains("modal-show")) {
+        letterForm.classList.remove("modal-show");
+      }
+    }
 });
 
 //Закрытие модального окна
@@ -29,15 +67,5 @@ let toggleFunctionArrow = function() {
   });
 };
 
-//console.log(rightArrow);
-//console.log(firstSlide);
-//console.log(secondSlide);
 rightArrow.onclick = toggleFunctionArrow;
 leftArrow.onclick = toggleFunctionArrow;
-
-//Переключение слайдов pagination-ом
-/*paginations.forEach(function(pagination) {
-  pagination.onclick = function() {
-    toggleFunctionArrow();
-  };
-});*/
