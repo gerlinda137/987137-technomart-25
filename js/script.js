@@ -30,7 +30,9 @@ letterLink.addEventListener("click", function(evt){
 letter.addEventListener("submit", function (evt) {
   if (!name.value || !email.value) {
     evt.preventDefault();
-    letterForm.classList.add("modal-error");
+    letter.classList.remove("modal-error");
+    letter.offsetWidth = letter.offsetWidth;
+    letter.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", login.value);
@@ -43,6 +45,7 @@ window.addEventListener("keydown", function (evt) {
       evt.preventDefault();
       if (letterForm.classList.contains("modal-show")) {
         letterForm.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
       }
     }
 });
@@ -51,7 +54,17 @@ window.addEventListener("keydown", function (evt) {
 let closeButton = document.querySelector(".close-button");
 closeButton.addEventListener("click", function(){
   letterForm.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
 });
+
+//карта
+let mapLink = document.querySelector('.map');
+let map = document.querySelector('.modal-map');
+mapLink.addEventListener("click", function(evt){
+  evt.preventDefault();
+  map.classList.add("modal-show");
+});
+
 
 //слайдер дрелей
 let paginations = document.querySelectorAll('.slider__pagination-item');
