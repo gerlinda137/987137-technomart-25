@@ -10,24 +10,36 @@ let email = letterForm.querySelector("[name=e-mail]");
 let isStorageSupport = true;
 let storage = "";
 
+let closeButton = document.querySelector(".close-button");
+
+let mapLink = document.querySelector(".map");
+let map = document.querySelector(".modal-map");
+let mapClose = document.querySelector(".close-button__map");
+
+let paginations = document.querySelectorAll(".slider__pagination-item");
+let rightArrow = document.querySelector(".slider__navigation-next");
+let leftArrow = document.querySelector(".slider__navigation-prev");
+let firstSlide = document.querySelector(".slider__item");
+let secondSlide = document.querySelector(".second-slider");
+
 try {
   storage = localStorage.getItem("name");
 } catch (err) {
   isStorageSupport = false;
 }
 
-letterLink.addEventListener("click", function(evt){
+letterLink.addEventListener("click", function(evt) {
   evt.preventDefault();
   letterForm.classList.add("modal-show");
   if (storage) {
-  name.value = storage;
-  email.focus();
-} else {
-  name.focus();
-}
+    name.value = storage;
+    email.focus();
+  } else {
+    name.focus();
+  }
 });
 
-letter.addEventListener("submit", function (evt) {
+letter.addEventListener("submit", function(evt) {
   if (!name.value || !email.value) {
     evt.preventDefault();
     letter.classList.remove("modal-error");
@@ -40,43 +52,38 @@ letter.addEventListener("submit", function (evt) {
   }
 });
 
-window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (letterForm.classList.contains("modal-show")) {
-        letterForm.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (letterForm.classList.contains("modal-show")) {
+      letterForm.classList.remove("modal-show");
+      letter.classList.remove("modal-error");
     }
+  }
 });
 
 //Закрытие модального окна
-let closeButton = document.querySelector(".close-button");
-closeButton.addEventListener("click", function(){
+closeButton.addEventListener("click", function() {
   letterForm.classList.remove("modal-show");
-  popup.classList.remove("modal-error");
+  letter.classList.remove("modal-error");
 });
 
 //карта
-let mapLink = document.querySelector('.map');
-let map = document.querySelector('.modal-map');
-mapLink.addEventListener("click", function(evt){
+mapLink.addEventListener("click", function(evt) {
   evt.preventDefault();
   map.classList.add("modal-show");
 });
-
+mapClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  map.classList.remove("modal-show");
+});
 
 //слайдер дрелей
-let paginations = document.querySelectorAll('.slider__pagination-item');
-let rightArrow = document.querySelector('.slider__navigation-next');
-let leftArrow = document.querySelector('.slider__navigation-prev');
-let firstSlide = document.querySelector('.slider__item');
-let secondSlide = document.querySelector('.second-slider');
 let toggleFunctionArrow = function() {
-  firstSlide.classList.toggle('slider__item--active');
-  secondSlide.classList.toggle('slider__item--active');
+  firstSlide.classList.toggle("slider__item--active");
+  secondSlide.classList.toggle("slider__item--active");
   paginations.forEach(function(pagination) {
-    pagination.classList.toggle('slider__pagination-item--active');
+    pagination.classList.toggle("slider__pagination-item--active");
   });
 };
 

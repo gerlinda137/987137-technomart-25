@@ -495,8 +495,11 @@ a.user-name__log-out{
 .site-navigation li {
   font-family: Cuprum, sans-serif;
   list-style: none;
-  padding: 21px 30px;
+  padding: 21px 10px;
   display: flex;
+  justify-content: center;
+  display: flex;
+  flex-grow: 1;
 }
 
 .site-navigation a {
@@ -661,7 +664,7 @@ top: 31px;
 
 .categories-list__first-row .new-item::after {
   position: absolute;
-  left: 240px;
+  left: auto;
   top: 0;
   bottom: 0;
   right: 0;
@@ -2407,6 +2410,7 @@ textarea::-ms-input-placeholder {
   background-color: transparent;
   cursor: pointer;
   position: absolute;
+  z-index: 3;
   width: 21px;
   height: 21px;
   right: 15px;
@@ -2502,7 +2506,21 @@ a.further-actions__active-button {
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
 
+  border: none;
+}
+
+.modal-map div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
 /*Служебные классы*/
 
 .visually-hidden {
