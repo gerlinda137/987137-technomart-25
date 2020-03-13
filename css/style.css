@@ -76,6 +76,10 @@ html {
   padding-left: 0;
 }
 
+.purchase li{
+  flex-grow: 1;
+}
+
 .purchase a {
   display: flex;
   color: #fff;
